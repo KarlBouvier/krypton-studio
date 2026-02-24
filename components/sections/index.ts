@@ -1,7 +1,10 @@
 export { Navbar } from "./Navbar";
 export { Hero } from "./Hero";
+export { TodaysSpecial } from "./TodaysSpecial";
+export { MenuSection } from "./MenuSection";
 export { Services } from "./Services";
 export { Gallery } from "./Gallery";
+export { OpeningHours } from "./OpeningHours";
 export { BookingForm } from "./BookingForm";
 export { Testimonials } from "./Testimonials";
 export { Footer } from "./Footer";

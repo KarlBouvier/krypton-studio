@@ -1,4 +1,4 @@
-# KC Demos
+# Krypton Studio
 
 Next.js 14 (App Router) MVP for showcasing multiple business website demos: restaurant, pizzeria, coiffeur — with **luxe** and **classic** variants.
 

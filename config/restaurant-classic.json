@@ -7,8 +7,9 @@
     "logoText": "La Table du Marché",
     "links": [
       { "label": "Accueil", "href": "#hero" },
-      { "label": "Menu", "href": "#services" },
-      { "label": "Photos", "href": "#gallery" },
+      { "label": "Menu", "href": "#menu" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Horaires", "href": "#hours" },
       { "label": "Réserver", "href": "#booking" },
       { "label": "Avis", "href": "#testimonials" }
     ]
@@ -17,24 +18,60 @@
     "title": "Bienvenue à La Table du Marché",
     "subtitle": "Des produits frais, une cuisine simple et généreuse.",
     "ctaText": "Voir le menu",
-    "ctaHref": "#services"
+    "ctaHref": "#menu",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1920&h=1080&fit=crop"
   },
   "services": {
     "title": "Notre Menu",
     "subtitle": "Tous les plats sont préparés sur place",
-    "items": [
+    "items": []
+  },
+  "menu": {
+    "title": "Notre Menu",
+    "subtitle": "Tous les plats sont préparés sur place",
+    "categories": [
       {
-        "title": "Plats du jour",
-        "description": "Selon le marché : viande, poisson ou végétal."
+        "id": "starters",
+        "name": "Entrées",
+        "items": [
+          { "name": "Salade verte", "description": "Mesclun, vinaigrette maison.", "price": "6 €" },
+          { "name": "Soupe du jour", "description": "Selon le marché.", "price": "5 €" },
+          { "name": "Quiche du jour", "description": "Salade verte.", "price": "9 €" }
+        ]
       },
       {
-        "title": "Formule déjeuner",
-        "description": "Entrée + plat ou plat + dessert à prix fixe."
+        "id": "mains",
+        "name": "Plats",
+        "items": [
+          { "name": "Plat du jour (viande)", "description": "Légumes de saison, frites ou salade.", "price": "12 €" },
+          { "name": "Plat du jour (poisson)", "description": "Selon arrivage.", "price": "14 €" },
+          { "name": "Omelette", "description": "Fromage, jambon ou légumes.", "price": "8 €" }
+        ]
       },
       {
-        "title": "Petite restauration",
-        "description": "Sandwichs, salades et pâtisseries à emporter."
+        "id": "desserts",
+        "name": "Desserts",
+        "items": [
+          { "name": "Tarte du jour", "description": "Façon maison.", "price": "5 €" },
+          { "name": "Café gourmand", "description": "3 mini desserts.", "price": "7 €" },
+          { "name": "Compote ou fromage blanc", "description": "", "price": "4 €" }
+        ]
       }
+    ]
+  },
+  "todaysSpecial": {
+    "title": "Blanquette de veau",
+    "description": "Carottes, champignons, riz pilaf. Plat du jour aujourd'hui.",
+    "price": "13 €",
+    "ctaText": "Réserver",
+    "ctaHref": "#booking"
+  },
+  "openingHours": {
+    "title": "Horaires",
+    "subtitle": "Ouvert du mardi au samedi",
+    "days": [
+      { "label": "Mardi – Samedi", "hours": "11h30 – 14h30 · 18h30 – 22h" },
+      { "label": "Dimanche – Lundi", "hours": "Fermé" }
     ]
   },
   "gallery": {
@@ -50,16 +87,8 @@
     "title": "Avis clients",
     "subtitle": "Ce qu'ils en pensent",
     "items": [
-      {
-        "quote": "Très bon rapport qualité-prix, équipe sympa et plats maison.",
-        "author": "Sophie M.",
-        "role": ""
-      },
-      {
-        "quote": "Adresse de confiance pour déjeuner en semaine.",
-        "author": "Pierre K.",
-        "role": ""
-      }
+      { "quote": "Très bon rapport qualité-prix, équipe sympa et plats maison.", "author": "Sophie M.", "role": "" },
+      { "quote": "Adresse de confiance pour déjeuner en semaine.", "author": "Pierre K.", "role": "" }
     ]
   },
   "footer": {

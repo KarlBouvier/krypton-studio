@@ -7,8 +7,9 @@
     "logoText": "Forno & Stella",
     "links": [
       { "label": "Accueil", "href": "#hero" },
-      { "label": "Carte", "href": "#services" },
+      { "label": "Carte", "href": "#menu" },
       { "label": "Galerie", "href": "#gallery" },
+      { "label": "Horaires", "href": "#hours" },
       { "label": "Réservation", "href": "#booking" },
       { "label": "Témoignages", "href": "#testimonials" }
     ]
@@ -17,24 +18,61 @@
     "title": "L'art de la pizza napolitaine",
     "subtitle": "Ingrédients d'exception, four Stefano Ferrara, savoir-faire d'antan.",
     "ctaText": "Réserver",
-    "ctaHref": "#booking"
+    "ctaHref": "#booking",
+    "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=1920&h=1080&fit=crop"
   },
   "services": {
     "title": "Notre Carte",
+    "subtitle": "Pizzas et antipasti",
+    "items": []
+  },
+  "menu": {
+    "title": "Notre Carte",
     "subtitle": "Pizzas et antipasti de caractère",
-    "items": [
+    "categories": [
       {
-        "title": "Pizzas Signature",
-        "description": "Recettes uniques, farine sélectionnée, mozzarella di Bufala."
+        "id": "starters",
+        "name": "Antipasti",
+        "items": [
+          { "name": "Burrata Pugliese", "description": "Tomates confites, basilic, huile d'olive.", "price": "16 €" },
+          { "name": "Carpaccio de bœuf", "description": "Roquette, parmesan, citron.", "price": "18 €" },
+          { "name": "Bruschetta trio", "description": "Tomate, olive, champignon.", "price": "12 €" }
+        ]
       },
       {
-        "title": "Antipasti & Vins",
-        "description": "Carte des vins soignée et planches à partager."
+        "id": "pizzas",
+        "name": "Pizzas",
+        "items": [
+          { "name": "Margherita", "description": "San Marzano, mozzarella di Bufala, basilic.", "price": "18 €" },
+          { "name": "Truffe noire", "description": "Crème, mozzarella, copeaux de truffe.", "price": "28 €" },
+          { "name": "Diavola", "description": "Salami piquant, mozzarella, basilic.", "price": "20 €" },
+          { "name": "Quattro formaggi", "description": "Gorgonzola, taleggio, parmesan, mozzarella.", "price": "22 €" }
+        ]
       },
       {
-        "title": "Événements Privés",
-        "description": "Location du lieu et menu sur mesure pour vos soirées."
+        "id": "desserts",
+        "name": "Dolci",
+        "items": [
+          { "name": "Tiramisu", "description": "Mascarpone, café, cacao.", "price": "10 €" },
+          { "name": "Panna cotta", "description": "Fruits rouges ou caramel.", "price": "9 €" },
+          { "name": "Affogato", "description": "Glace vanille, espresso.", "price": "8 €" }
+        ]
       }
+    ]
+  },
+  "todaysSpecial": {
+    "title": "Pizza Truffe & Burrata",
+    "description": "Base crème, burrata fondante, copeaux de truffe noire, roquette. Édition limitée.",
+    "price": "26 €",
+    "ctaText": "Réserver",
+    "ctaHref": "#booking"
+  },
+  "openingHours": {
+    "title": "Horaires",
+    "subtitle": "Réservation conseillée",
+    "days": [
+      { "label": "Mercredi – Dimanche", "hours": "12h – 14h30 · 19h – 23h" },
+      { "label": "Lundi – Mardi", "hours": "Fermé" }
     ]
   },
   "gallery": {
@@ -50,16 +88,8 @@
     "title": "Témoignages",
     "subtitle": "Ce que disent nos convives",
     "items": [
-      {
-        "quote": "Une expérience au-delà de la simple pizza. À vivre absolument.",
-        "author": "Antoine V.",
-        "role": "Critique gastronomique"
-      },
-      {
-        "quote": "Le lieu et la cuisine sont à la hauteur de la réputation.",
-        "author": "Claire F.",
-        "role": ""
-      }
+      { "quote": "Une expérience au-delà de la simple pizza. À vivre absolument.", "author": "Antoine V.", "role": "Critique gastronomique" },
+      { "quote": "Le lieu et la cuisine sont à la hauteur de la réputation.", "author": "Claire F.", "role": "" }
     ]
   },
   "footer": {

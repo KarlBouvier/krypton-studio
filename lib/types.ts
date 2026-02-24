@@ -9,10 +9,48 @@ export interface SiteConfig {
   nav: NavConfig;
   hero: HeroConfig;
   services: ServicesConfig;
+  /** Restaurant/pizzeria: menu with categories. When present, can replace or complement services. */
+  menu?: MenuConfig;
   gallery: GalleryConfig;
+  /** Restaurant/pizzeria: opening hours block */
+  openingHours?: OpeningHoursConfig;
   testimonials: TestimonialsConfig;
   footer: FooterConfig;
   booking?: BookingConfig;
+  /** Restaurant/pizzeria: today's special highlight */
+  todaysSpecial?: TodaysSpecialConfig;
+}
+
+export interface MenuCategory {
+  id: string;
+  name: string;
+  items: MenuItem[];
+}
+
+export interface MenuItem {
+  name: string;
+  description?: string;
+  price?: string;
+}
+
+export interface MenuConfig {
+  title: string;
+  subtitle?: string;
+  categories: MenuCategory[];
+}
+
+export interface OpeningHoursConfig {
+  title: string;
+  subtitle?: string;
+  days: { label: string; hours: string }[];
+}
+
+export interface TodaysSpecialConfig {
+  title: string;
+  description?: string;
+  price?: string;
+  ctaText?: string;
+  ctaHref?: string;
 }
 
 export interface NavConfig {

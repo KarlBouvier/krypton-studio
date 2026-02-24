@@ -7,8 +7,9 @@
     "logoText": "Pizza Roma",
     "links": [
       { "label": "Accueil", "href": "#hero" },
-      { "label": "Pizzas", "href": "#services" },
+      { "label": "Menu", "href": "#menu" },
       { "label": "Galerie", "href": "#gallery" },
+      { "label": "Horaires", "href": "#hours" },
       { "label": "Commander", "href": "#booking" },
       { "label": "Avis", "href": "#testimonials" }
     ]
@@ -17,24 +18,62 @@
     "title": "Les vraies pizzas napolitaines",
     "subtitle": "Pâte levée 48h, four à bois, ingrédients d'Italie.",
     "ctaText": "Voir la carte",
-    "ctaHref": "#services"
+    "ctaHref": "#menu",
+    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=1920&h=1080&fit=crop"
   },
   "services": {
     "title": "Nos Pizzas",
     "subtitle": "Toutes cuites au feu de bois",
-    "items": [
+    "items": []
+  },
+  "menu": {
+    "title": "Nos Pizzas",
+    "subtitle": "Toutes cuites au feu de bois",
+    "categories": [
       {
-        "title": "Classiques",
-        "description": "Margherita, Regina, 4 fromages, pepperoni."
+        "id": "starters",
+        "name": "Entrées",
+        "items": [
+          { "name": "Bruschetta", "description": "Tomate, ail, basilic.", "price": "5 €" },
+          { "name": "Salade mozzarella", "description": "Tomates, basilic, huile d'olive.", "price": "7 €" },
+          { "name": "Antipasti (charcuterie & fromage)", "description": "À partager.", "price": "12 €" }
+        ]
       },
       {
-        "title": "Spécialités",
-        "description": "Truffe, burrata, charcuterie italienne."
+        "id": "pizzas",
+        "name": "Pizzas",
+        "items": [
+          { "name": "Margherita", "description": "Tomate, mozzarella, basilic.", "price": "10 €" },
+          { "name": "Regina", "description": "Tomate, mozzarella, jambon, champignons.", "price": "12 €" },
+          { "name": "4 fromages", "description": "Mozzarella, gorgonzola, chèvre, emmental.", "price": "13 €" },
+          { "name": "Pepperoni", "description": "Tomate, mozzarella, pepperoni.", "price": "12 €" },
+          { "name": "Calzone", "description": "Jambon, champignons, fromage.", "price": "13 €" }
+        ]
       },
       {
-        "title": "Sur place ou à emporter",
-        "description": "Dégustation en salle ou livraison à domicile."
+        "id": "desserts",
+        "name": "Desserts",
+        "items": [
+          { "name": "Tiramisu", "description": "Maison.", "price": "6 €" },
+          { "name": "Panna cotta", "description": "Coulis fruits rouges.", "price": "5 €" },
+          { "name": "Cannoli", "description": "Ricotta, pépites de chocolat.", "price": "5 €" }
+        ]
       }
+    ]
+  },
+  "todaysSpecial": {
+    "title": "Pizza du jour : Truffe",
+    "description": "Crème, mozzarella, copeaux de truffe. Disponible aujourd'hui uniquement.",
+    "price": "15 €",
+    "ctaText": "Commander",
+    "ctaHref": "#booking"
+  },
+  "openingHours": {
+    "title": "Horaires",
+    "subtitle": "Sur place ou à emporter",
+    "days": [
+      { "label": "Lundi – Jeudi", "hours": "11h30 – 14h30 · 18h – 22h30" },
+      { "label": "Vendredi – Dimanche", "hours": "11h30 – 23h" }
     ]
   },
   "gallery": {
@@ -50,16 +89,8 @@
     "title": "Avis des clients",
     "subtitle": "",
     "items": [
-      {
-        "quote": "Les meilleures pizzas du quartier, pâte parfaite.",
-        "author": "Luca B.",
-        "role": ""
-      },
-      {
-        "quote": "Service rapide et pizzas délicieuses. On recommande !",
-        "author": "Emma R.",
-        "role": ""
-      }
+      { "quote": "Les meilleures pizzas du quartier, pâte parfaite.", "author": "Luca B.", "role": "" },
+      { "quote": "Service rapide et pizzas délicieuses. On recommande !", "author": "Emma R.", "role": "" }
     ]
   },
   "footer": {

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "KC Demos — Business Website Demos",
+  title: "Krypton Studio — Business Website Demos",
   description: "Showcase demos for restaurant, pizzeria, and coiffeur websites.",
 };
 

@@ -7,8 +7,9 @@
     "logoText": "Le Bistrot Doré",
     "links": [
       { "label": "Accueil", "href": "#hero" },
-      { "label": "Carte", "href": "#services" },
+      { "label": "Carte", "href": "#menu" },
       { "label": "Galerie", "href": "#gallery" },
+      { "label": "Horaires", "href": "#hours" },
       { "label": "Réservation", "href": "#booking" },
       { "label": "Avis", "href": "#testimonials" }
     ]
@@ -17,24 +18,61 @@
     "title": "Une expérience culinaire d'exception",
     "subtitle": "Saveurs raffinées et ambiance intimiste au cœur de la ville.",
     "ctaText": "Réserver une table",
-    "ctaHref": "#booking"
+    "ctaHref": "#booking",
+    "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=1080&fit=crop"
   },
   "services": {
     "title": "Notre Carte",
+    "subtitle": "Des produits d'exception",
+    "items": []
+  },
+  "menu": {
+    "title": "Notre Carte",
     "subtitle": "Des produits d'exception, une cuisine créative",
-    "items": [
+    "categories": [
       {
-        "title": "Menu Dégustation",
-        "description": "Six plats signatures accompagnés des vins du sommelier."
+        "id": "starters",
+        "name": "Entrées",
+        "items": [
+          { "name": "Velouté du jour", "description": "Légumes de saison, crème fraîche.", "price": "14 €" },
+          { "name": "Tartare de bœuf", "description": "Câpres, oignon rouge, toast.", "price": "22 €" },
+          { "name": "Burrata et tomates", "description": "Basilic, huile d'olive, pain grillé.", "price": "18 €" }
+        ]
       },
       {
-        "title": "Terrasse Privée",
-        "description": "Dîners en petit comité dans notre jardin secret."
+        "id": "mains",
+        "name": "Plats",
+        "items": [
+          { "name": "Filet de bœuf", "description": "Pommes grenailles, sauce au poivre.", "price": "38 €" },
+          { "name": "Bar rôti", "description": "Légumes croquants, beurre blanc.", "price": "34 €" },
+          { "name": "Risotto aux cèpes", "description": "Parmesan 24 mois, persillade.", "price": "28 €" }
+        ]
       },
       {
-        "title": "Événements",
-        "description": "Mariages, séminaires et réceptions sur mesure."
+        "id": "desserts",
+        "name": "Desserts",
+        "items": [
+          { "name": "Soufflé au chocolat", "description": "Glace vanille.", "price": "14 €" },
+          { "name": "Tarte tatin", "description": "Crème fraîche fouettée.", "price": "12 €" },
+          { "name": "Sélection de fromages", "description": "Chutney, noix.", "price": "16 €" }
+        ]
       }
+    ]
+  },
+  "todaysSpecial": {
+    "title": "Risotto aux cèpes et truffe noire",
+    "description": "Riz carnaroli, parmesan 24 mois, copeaux de truffe noire d'Alba.",
+    "price": "32 €",
+    "ctaText": "Réserver",
+    "ctaHref": "#booking"
+  },
+  "openingHours": {
+    "title": "Horaires d'ouverture",
+    "subtitle": "Nous vous accueillons sur réservation",
+    "days": [
+      { "label": "Mardi – Vendredi", "hours": "12h – 14h30 · 19h – 22h30" },
+      { "label": "Samedi", "hours": "19h – 23h" },
+      { "label": "Dimanche – Lundi", "hours": "Fermé" }
     ]
   },
   "gallery": {
@@ -50,16 +88,8 @@
     "title": "Ils nous font confiance",
     "subtitle": "Avis de nos convives",
     "items": [
-      {
-        "quote": "Une soirée magique. La cuisine est sublimée, le service impeccable.",
-        "author": "Marie L.",
-        "role": "Cliente fidèle"
-      },
-      {
-        "quote": "Le meilleur restaurant de la ville. À refaire sans hésiter.",
-        "author": "Thomas D.",
-        "role": "Foodie"
-      }
+      { "quote": "Une soirée magique. La cuisine est sublimée, le service impeccable.", "author": "Marie L.", "role": "Cliente fidèle" },
+      { "quote": "Le meilleur restaurant de la ville. À refaire sans hésiter.", "author": "Thomas D.", "role": "Foodie" }
     ]
   },
   "footer": {

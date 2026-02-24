@@ -44,8 +44,11 @@ export async function loadConfig(
   }
 }
 
-export function getThemeClass(variant: string): string {
-  return variant === "luxe" ? "theme-luxe" : "";
+export function getThemeClass(variant: string, sector?: string): string {
+  const luxe = variant === "luxe" ? " theme-luxe" : "";
+  const warm =
+    sector === "restaurant" || sector === "pizzeria" ? " theme-warm" : "";
+  return `${warm}${luxe}`.trim() || "";
 }
 
 export function getAvailableDemos(): { sector: string; variant: string }[] {
