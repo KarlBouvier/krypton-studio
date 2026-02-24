@@ -1,0 +1,78 @@
+{
+  "sector": "pizzeria",
+  "variant": "luxe",
+  "siteName": "Forno & Stella",
+  "tagline": "Pizza d'exception",
+  "nav": {
+    "logoText": "Forno & Stella",
+    "links": [
+      { "label": "Accueil", "href": "#hero" },
+      { "label": "Carte", "href": "#services" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Réservation", "href": "#booking" },
+      { "label": "Témoignages", "href": "#testimonials" }
+    ]
+  },
+  "hero": {
+    "title": "L'art de la pizza napolitaine",
+    "subtitle": "Ingrédients d'exception, four Stefano Ferrara, savoir-faire d'antan.",
+    "ctaText": "Réserver",
+    "ctaHref": "#booking"
+  },
+  "services": {
+    "title": "Notre Carte",
+    "subtitle": "Pizzas et antipasti de caractère",
+    "items": [
+      {
+        "title": "Pizzas Signature",
+        "description": "Recettes uniques, farine sélectionnée, mozzarella di Bufala."
+      },
+      {
+        "title": "Antipasti & Vins",
+        "description": "Carte des vins soignée et planches à partager."
+      },
+      {
+        "title": "Événements Privés",
+        "description": "Location du lieu et menu sur mesure pour vos soirées."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Ambiance Forno & Stella",
+    "subtitle": "Un lieu unique",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=600&h=400&fit=crop", "alt": "Restaurant" },
+      { "src": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop", "alt": "Pizza" },
+      { "src": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=400&fit=crop", "alt": "Four" }
+    ]
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "subtitle": "Ce que disent nos convives",
+    "items": [
+      {
+        "quote": "Une expérience au-delà de la simple pizza. À vivre absolument.",
+        "author": "Antoine V.",
+        "role": "Critique gastronomique"
+      },
+      {
+        "quote": "Le lieu et la cuisine sont à la hauteur de la réputation.",
+        "author": "Claire F.",
+        "role": ""
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Forno & Stella — Pizza d'exception",
+    "copyright": "© 2026 Forno & Stella. Tous droits réservés.",
+    "links": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Contact", "href": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "Réservation",
+    "subtitle": "Réservez votre table pour une expérience inoubliable",
+    "successMessage": "Votre réservation est enregistrée. Un email de confirmation vous a été envoyé."
+  }
+}

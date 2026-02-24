@@ -1,0 +1,78 @@
+{
+  "sector": "coiffeur",
+  "variant": "classic",
+  "siteName": "Coiffure Marie",
+  "tagline": "Coiffure mixte, coupe et couleur",
+  "nav": {
+    "logoText": "Coiffure Marie",
+    "links": [
+      { "label": "Accueil", "href": "#hero" },
+      { "label": "Prestations", "href": "#services" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "RDV", "href": "#booking" },
+      { "label": "Avis", "href": "#testimonials" }
+    ]
+  },
+  "hero": {
+    "title": "Bienvenue chez Coiffure Marie",
+    "subtitle": "Coupe, couleur et soins pour toute la famille, dans la bonne humeur.",
+    "ctaText": "Réserver",
+    "ctaHref": "#booking"
+  },
+  "services": {
+    "title": "Prestations & Tarifs",
+    "subtitle": "Des prix transparents, sans surprise",
+    "items": [
+      {
+        "title": "Coupe femme / homme",
+        "description": "Coupe, shampooing et brushing inclus. Tarifs selon longueur."
+      },
+      {
+        "title": "Couleur & Mèches",
+        "description": "Teinture, balayage et reflets. Devis sur demande."
+      },
+      {
+        "title": "Soins",
+        "description": "Masques, soins kératine et brushing soin."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Nos réalisations",
+    "subtitle": "Quelques exemples de notre travail",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=600&h=400&fit=crop", "alt": "Salon" },
+      { "src": "https://images.unsplash.com/photo-1595476108010-b4d1f769b0b2?w=600&h=400&fit=crop", "alt": "Coupe" },
+      { "src": "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&h=400&fit=crop", "alt": "Coiffure" }
+    ]
+  },
+  "testimonials": {
+    "title": "Avis clients",
+    "subtitle": "",
+    "items": [
+      {
+        "quote": "Marie est à l'écoute et fait exactement ce qu'on lui demande. Top !",
+        "author": "Nathalie D.",
+        "role": ""
+      },
+      {
+        "quote": "Salon propre, prix corrects. Je reviens toujours avec plaisir.",
+        "author": "David P.",
+        "role": ""
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Coiffure Marie — Coupe & couleur",
+    "copyright": "© 2026 Coiffure Marie.",
+    "links": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Contact", "href": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "Réserver un créneau",
+    "subtitle": "Indiquez vos coordonnées et la date souhaitée",
+    "successMessage": "Demande envoyée. Nous vous confirmerons par téléphone ou SMS."
+  }
+}

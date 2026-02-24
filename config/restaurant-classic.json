@@ -1,0 +1,78 @@
+{
+  "sector": "restaurant",
+  "variant": "classic",
+  "siteName": "La Table du Marché",
+  "tagline": "Cuisine du marché, fait maison",
+  "nav": {
+    "logoText": "La Table du Marché",
+    "links": [
+      { "label": "Accueil", "href": "#hero" },
+      { "label": "Menu", "href": "#services" },
+      { "label": "Photos", "href": "#gallery" },
+      { "label": "Réserver", "href": "#booking" },
+      { "label": "Avis", "href": "#testimonials" }
+    ]
+  },
+  "hero": {
+    "title": "Bienvenue à La Table du Marché",
+    "subtitle": "Des produits frais, une cuisine simple et généreuse.",
+    "ctaText": "Voir le menu",
+    "ctaHref": "#services"
+  },
+  "services": {
+    "title": "Notre Menu",
+    "subtitle": "Tous les plats sont préparés sur place",
+    "items": [
+      {
+        "title": "Plats du jour",
+        "description": "Selon le marché : viande, poisson ou végétal."
+      },
+      {
+        "title": "Formule déjeuner",
+        "description": "Entrée + plat ou plat + dessert à prix fixe."
+      },
+      {
+        "title": "Petite restauration",
+        "description": "Sandwichs, salades et pâtisseries à emporter."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "En images",
+    "subtitle": "Notre restaurant et nos plats",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&h=400&fit=crop", "alt": "Salle" },
+      { "src": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&h=400&fit=crop", "alt": "Salade" },
+      { "src": "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop", "alt": "Petit-déjeuner" }
+    ]
+  },
+  "testimonials": {
+    "title": "Avis clients",
+    "subtitle": "Ce qu'ils en pensent",
+    "items": [
+      {
+        "quote": "Très bon rapport qualité-prix, équipe sympa et plats maison.",
+        "author": "Sophie M.",
+        "role": ""
+      },
+      {
+        "quote": "Adresse de confiance pour déjeuner en semaine.",
+        "author": "Pierre K.",
+        "role": ""
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "La Table du Marché — Cuisine du marché",
+    "copyright": "© 2026 La Table du Marché.",
+    "links": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Nous contacter", "href": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "Réserver",
+    "subtitle": "Indiquez vos coordonnées et la date souhaitée",
+    "successMessage": "Demande envoyée ! Nous vous confirmerons par email."
+  }
+}

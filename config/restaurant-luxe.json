@@ -1,0 +1,78 @@
+{
+  "sector": "restaurant",
+  "variant": "luxe",
+  "siteName": "Le Bistrot Doré",
+  "tagline": "Fine dining reimagined",
+  "nav": {
+    "logoText": "Le Bistrot Doré",
+    "links": [
+      { "label": "Accueil", "href": "#hero" },
+      { "label": "Carte", "href": "#services" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Réservation", "href": "#booking" },
+      { "label": "Avis", "href": "#testimonials" }
+    ]
+  },
+  "hero": {
+    "title": "Une expérience culinaire d'exception",
+    "subtitle": "Saveurs raffinées et ambiance intimiste au cœur de la ville.",
+    "ctaText": "Réserver une table",
+    "ctaHref": "#booking"
+  },
+  "services": {
+    "title": "Notre Carte",
+    "subtitle": "Des produits d'exception, une cuisine créative",
+    "items": [
+      {
+        "title": "Menu Dégustation",
+        "description": "Six plats signatures accompagnés des vins du sommelier."
+      },
+      {
+        "title": "Terrasse Privée",
+        "description": "Dîners en petit comité dans notre jardin secret."
+      },
+      {
+        "title": "Événements",
+        "description": "Mariages, séminaires et réceptions sur mesure."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Ambiance",
+    "subtitle": "Découvrez notre univers",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=400&fit=crop", "alt": "Salle du restaurant" },
+      { "src": "https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=400&fit=crop", "alt": "Plat signature" },
+      { "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop", "alt": "Dessert" }
+    ]
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Avis de nos convives",
+    "items": [
+      {
+        "quote": "Une soirée magique. La cuisine est sublimée, le service impeccable.",
+        "author": "Marie L.",
+        "role": "Cliente fidèle"
+      },
+      {
+        "quote": "Le meilleur restaurant de la ville. À refaire sans hésiter.",
+        "author": "Thomas D.",
+        "role": "Foodie"
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Le Bistrot Doré — Fine dining reimagined",
+    "copyright": "© 2026 Le Bistrot Doré. Tous droits réservés.",
+    "links": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Contact", "href": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "Réservation",
+    "subtitle": "Réservez votre table en quelques clics",
+    "successMessage": "Votre réservation a bien été enregistrée. Nous vous recontacterons pour confirmer."
+  }
+}

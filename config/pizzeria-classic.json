@@ -1,0 +1,78 @@
+{
+  "sector": "pizzeria",
+  "variant": "classic",
+  "siteName": "Pizza Roma",
+  "tagline": "Pizza au feu de bois",
+  "nav": {
+    "logoText": "Pizza Roma",
+    "links": [
+      { "label": "Accueil", "href": "#hero" },
+      { "label": "Pizzas", "href": "#services" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Commander", "href": "#booking" },
+      { "label": "Avis", "href": "#testimonials" }
+    ]
+  },
+  "hero": {
+    "title": "Les vraies pizzas napolitaines",
+    "subtitle": "Pâte levée 48h, four à bois, ingrédients d'Italie.",
+    "ctaText": "Voir la carte",
+    "ctaHref": "#services"
+  },
+  "services": {
+    "title": "Nos Pizzas",
+    "subtitle": "Toutes cuites au feu de bois",
+    "items": [
+      {
+        "title": "Classiques",
+        "description": "Margherita, Regina, 4 fromages, pepperoni."
+      },
+      {
+        "title": "Spécialités",
+        "description": "Truffe, burrata, charcuterie italienne."
+      },
+      {
+        "title": "Sur place ou à emporter",
+        "description": "Dégustation en salle ou livraison à domicile."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Nos pizzas",
+    "subtitle": "Fraîchement sorties du four",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=400&fit=crop", "alt": "Pizza Margherita" },
+      { "src": "https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=600&h=400&fit=crop", "alt": "Four à bois" },
+      { "src": "https://images.unsplash.com/photo-1594007651269-47e849e660c8?w=600&h=400&fit=crop", "alt": "Pizza" }
+    ]
+  },
+  "testimonials": {
+    "title": "Avis des clients",
+    "subtitle": "",
+    "items": [
+      {
+        "quote": "Les meilleures pizzas du quartier, pâte parfaite.",
+        "author": "Luca B.",
+        "role": ""
+      },
+      {
+        "quote": "Service rapide et pizzas délicieuses. On recommande !",
+        "author": "Emma R.",
+        "role": ""
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Pizza Roma — Au feu de bois",
+    "copyright": "© 2026 Pizza Roma.",
+    "links": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Contact", "href": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "Réservation / Commande",
+    "subtitle": "Réservez une table ou planifiez une commande",
+    "successMessage": "Votre demande a bien été reçue. À très bientôt !"
+  }
+}

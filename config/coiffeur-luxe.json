@@ -1,0 +1,78 @@
+{
+  "sector": "coiffeur",
+  "variant": "luxe",
+  "siteName": "Atelier Capillaire",
+  "tagline": "Haute coiffure & bien-être",
+  "nav": {
+    "logoText": "Atelier Capillaire",
+    "links": [
+      { "label": "Accueil", "href": "#hero" },
+      { "label": "Prestations", "href": "#services" },
+      { "label": "Galerie", "href": "#gallery" },
+      { "label": "Rendez-vous", "href": "#booking" },
+      { "label": "Avis", "href": "#testimonials" }
+    ]
+  },
+  "hero": {
+    "title": "L'excellence capillaire",
+    "subtitle": "Coupe, couleur et soins sur mesure dans un écrin de raffinement.",
+    "ctaText": "Prendre rendez-vous",
+    "ctaHref": "#booking"
+  },
+  "services": {
+    "title": "Nos Prestations",
+    "subtitle": "Des soins d'exception pour cheveux et cuir chevelu",
+    "items": [
+      {
+        "title": "Coupe & Styling",
+        "description": "Coupe sur mesure et coiffure de création pour toutes occasions."
+      },
+      {
+        "title": "Couleur & Balayage",
+        "description": "Teintures premium et techniques artistiques pour un rendu unique."
+      },
+      {
+        "title": "Soins & Bien-être",
+        "description": "Soins profonds, massages crâniens et rituels signature."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Réalisations",
+    "subtitle": "Un aperçu de notre travail",
+    "images": [
+      { "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop", "alt": "Salon" },
+      { "src": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop", "alt": "Coiffure" },
+      { "src": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&h=400&fit=crop", "alt": "Soin" }
+    ]
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Témoignages de notre clientèle",
+    "items": [
+      {
+        "quote": "Un vrai moment de luxe. Mon coiffeur n'a jamais été aussi beau.",
+        "author": "Camille L.",
+        "role": "Cliente"
+      },
+      {
+        "quote": "Équipe talentueuse et accueil irréprochable. Je recommande les yeux fermés.",
+        "author": "Julien M.",
+        "role": ""
+      }
+    ]
+  },
+  "footer": {
+    "tagline": "Atelier Capillaire — Haute coiffure",
+    "copyright": "© 2026 Atelier Capillaire. Tous droits réservés.",
+    "links": [
+      { "label": "Mentions légales", "href": "#" },
+      { "label": "Contact", "href": "#booking" }
+    ]
+  },
+  "booking": {
+    "title": "Prendre rendez-vous",
+    "subtitle": "Choisissez votre créneau pour une expérience sur mesure",
+    "successMessage": "Votre demande de rendez-vous a bien été enregistrée. Nous vous recontacterons pour confirmer."
+  }
+}
