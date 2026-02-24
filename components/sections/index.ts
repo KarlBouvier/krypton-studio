@@ -1,12 +1,12 @@
 export { Navbar } from "./Navbar";
-export { Hero } from "./Hero";
+export { HeroSection } from "./HeroSection";
 export { TodaysSpecial } from "./TodaysSpecial";
 export { MenuSection } from "./MenuSection";
-export { Services } from "./Services";
-export { Gallery } from "./Gallery";
+export { ServicesSection } from "./ServicesSection";
+export { GallerySection } from "./GallerySection";
 export { OpeningHours } from "./OpeningHours";
 export { PricingSection } from "./PricingSection";
 export { TeamSection } from "./TeamSection";
 export { BookingForm } from "./BookingForm";
-export { Testimonials } from "./Testimonials";
+export { TestimonialsSection } from "./TestimonialsSection";
 export { Footer } from "./Footer";

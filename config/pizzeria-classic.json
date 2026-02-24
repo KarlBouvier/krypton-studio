@@ -5,6 +5,8 @@
   "tagline": "Pizza au feu de bois",
   "nav": {
     "logoText": "Pizza Roma",
+    "menuOpenLabel": "Ouvrir le menu",
+    "menuCloseLabel": "Fermer le menu",
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Menu", "href": "#menu" },
@@ -62,6 +64,7 @@
     ]
   },
   "todaysSpecial": {
+    "badgeLabel": "Pizza du jour",
     "title": "Pizza du jour : Truffe",
     "description": "Crème, mozzarella, copeaux de truffe. Disponible aujourd'hui uniquement.",
     "price": "15 €",
@@ -104,6 +107,18 @@
   "booking": {
     "title": "Réservation / Commande",
     "subtitle": "Réservez une table ou planifiez une commande",
-    "successMessage": "Votre demande a bien été reçue. À très bientôt !"
+    "successMessage": "Votre demande a bien été reçue. À très bientôt !",
+    "formLabels": {
+      "nameLabel": "Nom",
+      "emailLabel": "Email",
+      "dateLabel": "Date",
+      "timeLabel": "Heure",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean@exemple.fr",
+      "submitLabel": "Envoyer la demande",
+      "submittingLabel": "Envoi en cours…",
+      "errorGeneric": "Une erreur est survenue.",
+      "connectionError": "Erreur de connexion. Réessayez plus tard."
+    }
   }
 }

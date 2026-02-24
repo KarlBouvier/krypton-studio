@@ -5,6 +5,8 @@
   "tagline": "Cuisine du marché, fait maison",
   "nav": {
     "logoText": "La Table du Marché",
+    "menuOpenLabel": "Ouvrir le menu",
+    "menuCloseLabel": "Fermer le menu",
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Menu", "href": "#menu" },
@@ -60,6 +62,7 @@
     ]
   },
   "todaysSpecial": {
+    "badgeLabel": "Plat du jour",
     "title": "Blanquette de veau",
     "description": "Carottes, champignons, riz pilaf. Plat du jour aujourd'hui.",
     "price": "13 €",
@@ -102,6 +105,18 @@
   "booking": {
     "title": "Réserver",
     "subtitle": "Indiquez vos coordonnées et la date souhaitée",
-    "successMessage": "Demande envoyée ! Nous vous confirmerons par email."
+    "successMessage": "Demande envoyée ! Nous vous confirmerons par email.",
+    "formLabels": {
+      "nameLabel": "Nom",
+      "emailLabel": "Email",
+      "dateLabel": "Date",
+      "timeLabel": "Heure",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean@exemple.fr",
+      "submitLabel": "Envoyer la demande",
+      "submittingLabel": "Envoi en cours…",
+      "errorGeneric": "Une erreur est survenue.",
+      "connectionError": "Erreur de connexion. Réessayez plus tard."
+    }
   }
 }

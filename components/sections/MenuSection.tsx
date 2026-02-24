@@ -1,29 +1,41 @@
 import { cn } from "@/lib/utils";
+import {
+  getSectionContainerClasses,
+  getSectionTitleClasses,
+  getSectionSubtitleClasses,
+} from "@/lib/sectionStyles";
 import type { MenuConfig } from "@/lib/types";
+import type { Variant } from "@/lib/types";
 
-interface MenuSectionProps {
+export interface MenuSectionProps {
   config: MenuConfig;
+  variant: Variant;
+  sectionId?: string;
   className?: string;
 }
 
-export function MenuSection({ config, className }: MenuSectionProps) {
+export function MenuSection({
+  config,
+  variant,
+  sectionId = "menu",
+  className,
+}: MenuSectionProps) {
   return (
     <section
-      id="menu"
+      id={sectionId}
       className={cn(
-        "border-t border-border bg-muted/30 py-16 md:py-24",
+        getSectionContainerClasses(
+          variant,
+          "border-t border-border bg-muted/30"
+        ),
         className
       )}
     >
       <div className="container mx-auto max-w-4xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            {config.title}
-          </h2>
+          <h2 className={getSectionTitleClasses(variant)}>{config.title}</h2>
           {config.subtitle && (
-            <p className="mt-4 text-lg text-muted-foreground">
-              {config.subtitle}
-            </p>
+            <p className={getSectionSubtitleClasses()}>{config.subtitle}</p>
           )}
         </div>
         <div className="mt-12 space-y-14">
@@ -49,7 +61,7 @@ export function MenuSection({ config, className }: MenuSectionProps) {
                       )}
                     </div>
                     {item.price && (
-                      <span className="shrink-0 text-primary font-medium">
+                      <span className="shrink-0 font-medium text-primary">
                         {item.price}
                       </span>
                     )}

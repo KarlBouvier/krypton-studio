@@ -5,6 +5,8 @@
   "tagline": "Coiffure mixte, coupe et couleur",
   "nav": {
     "logoText": "Coiffure Marie",
+    "menuOpenLabel": "Ouvrir le menu",
+    "menuCloseLabel": "Fermer le menu",
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Prestations", "href": "#services" },
@@ -103,6 +105,18 @@
   "booking": {
     "title": "Réserver un créneau",
     "subtitle": "Indiquez vos coordonnées et la date souhaitée",
-    "successMessage": "Demande envoyée. Nous vous confirmerons par téléphone ou SMS."
+    "successMessage": "Demande envoyée. Nous vous confirmerons par téléphone ou SMS.",
+    "formLabels": {
+      "nameLabel": "Nom",
+      "emailLabel": "Email",
+      "dateLabel": "Date",
+      "timeLabel": "Heure",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean@exemple.fr",
+      "submitLabel": "Envoyer la demande",
+      "submittingLabel": "Envoi en cours…",
+      "errorGeneric": "Une erreur est survenue.",
+      "connectionError": "Erreur de connexion. Réessayez plus tard."
+    }
   }
 }

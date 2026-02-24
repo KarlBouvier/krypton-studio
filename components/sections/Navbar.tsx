@@ -49,7 +49,11 @@ export function Navbar({ config, themeClass, className }: NavbarProps) {
           size="icon"
           className="md:hidden"
           onClick={() => setOpen(!open)}
-          aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
+          aria-label={
+            open
+              ? config.menuCloseLabel ?? ""
+              : config.menuOpenLabel ?? ""
+          }
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </Button>

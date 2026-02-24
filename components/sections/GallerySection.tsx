@@ -1,25 +1,39 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import {
+  getSectionContainerClasses,
+  getSectionTitleClasses,
+  getSectionSubtitleClasses,
+} from "@/lib/sectionStyles";
 import type { GalleryConfig } from "@/lib/types";
+import type { Variant } from "@/lib/types";
 
-interface GalleryProps {
+export interface GallerySectionProps {
   config: GalleryConfig;
+  variant: Variant;
+  sectionId?: string;
   className?: string;
 }
 
-export function Gallery({ config, className }: GalleryProps) {
+export function GallerySection({
+  config,
+  variant,
+  sectionId = "gallery",
+  className,
+}: GallerySectionProps) {
   return (
     <section
-      id="gallery"
-      className={cn("border-t border-border py-16 md:py-24", className)}
+      id={sectionId}
+      className={cn(
+        getSectionContainerClasses(variant, "border-t border-border"),
+        className
+      )}
     >
       <div className="container mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            {config.title}
-          </h2>
+          <h2 className={getSectionTitleClasses(variant)}>{config.title}</h2>
           {config.subtitle && (
-            <p className="mt-4 text-lg text-muted-foreground">{config.subtitle}</p>
+            <p className={getSectionSubtitleClasses()}>{config.subtitle}</p>
           )}
         </div>
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

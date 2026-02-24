@@ -50,6 +50,8 @@ export interface OpeningHoursConfig {
 }
 
 export interface TodaysSpecialConfig {
+  /** Badge text above title (e.g. "Plat du jour", "Today's special") */
+  badgeLabel: string;
   title: string;
   description?: string;
   price?: string;
@@ -60,6 +62,9 @@ export interface TodaysSpecialConfig {
 export interface NavConfig {
   logoText: string;
   links: { label: string; href: string }[];
+  /** Accessibility: mobile menu button labels */
+  menuOpenLabel?: string;
+  menuCloseLabel?: string;
 }
 
 export interface HeroConfig {
@@ -106,10 +111,24 @@ export interface FooterConfig {
   links?: { label: string; href: string }[];
 }
 
+export interface BookingFormLabels {
+  nameLabel: string;
+  emailLabel: string;
+  dateLabel: string;
+  timeLabel: string;
+  namePlaceholder?: string;
+  emailPlaceholder?: string;
+  submitLabel: string;
+  submittingLabel: string;
+  errorGeneric?: string;
+  connectionError?: string;
+}
+
 export interface BookingConfig {
   title: string;
   subtitle?: string;
   successMessage: string;
+  formLabels: BookingFormLabels;
 }
 
 export interface PricingItem {

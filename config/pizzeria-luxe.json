@@ -5,6 +5,8 @@
   "tagline": "Pizza d'exception",
   "nav": {
     "logoText": "Forno & Stella",
+    "menuOpenLabel": "Ouvrir le menu",
+    "menuCloseLabel": "Fermer le menu",
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Carte", "href": "#menu" },
@@ -61,6 +63,7 @@
     ]
   },
   "todaysSpecial": {
+    "badgeLabel": "Plat du jour",
     "title": "Pizza Truffe & Burrata",
     "description": "Base crème, burrata fondante, copeaux de truffe noire, roquette. Édition limitée.",
     "price": "26 €",
@@ -103,6 +106,18 @@
   "booking": {
     "title": "Réservation",
     "subtitle": "Réservez votre table pour une expérience inoubliable",
-    "successMessage": "Votre réservation est enregistrée. Un email de confirmation vous a été envoyé."
+    "successMessage": "Votre réservation est enregistrée. Un email de confirmation vous a été envoyé.",
+    "formLabels": {
+      "nameLabel": "Nom",
+      "emailLabel": "Email",
+      "dateLabel": "Date",
+      "timeLabel": "Heure",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean@exemple.fr",
+      "submitLabel": "Envoyer la demande",
+      "submittingLabel": "Envoi en cours…",
+      "errorGeneric": "Une erreur est survenue.",
+      "connectionError": "Erreur de connexion. Réessayez plus tard."
+    }
   }
 }

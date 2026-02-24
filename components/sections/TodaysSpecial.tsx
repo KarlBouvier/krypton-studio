@@ -3,16 +3,24 @@ import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { TodaysSpecialConfig } from "@/lib/types";
+import type { Variant } from "@/lib/types";
 
-interface TodaysSpecialProps {
+export interface TodaysSpecialProps {
   config: TodaysSpecialConfig;
+  variant: Variant;
+  sectionId?: string;
   className?: string;
 }
 
-export function TodaysSpecial({ config, className }: TodaysSpecialProps) {
+export function TodaysSpecial({
+  config,
+  variant,
+  sectionId = "todays-special",
+  className,
+}: TodaysSpecialProps) {
   return (
     <section
-      id="todays-special"
+      id={sectionId}
       className={cn(
         "border-t border-border bg-primary/10 py-10 md:py-14",
         className
@@ -22,11 +30,11 @@ export function TodaysSpecial({ config, className }: TodaysSpecialProps) {
         <div className="flex flex-col items-center gap-6 rounded-xl border-2 border-primary/30 bg-card px-6 py-8 text-center shadow-sm sm:flex-row sm:justify-between sm:text-left md:px-10 md:py-10">
           <div className="flex items-center gap-4">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
-              <Sparkles className="h-6 w-6" />
+              <Sparkles className="h-6 w-6" aria-hidden />
             </div>
             <div>
               <p className="text-sm font-medium uppercase tracking-wider text-primary">
-                Plat du jour
+                {config.badgeLabel}
               </p>
               <h2 className="mt-1 text-2xl font-bold text-foreground sm:text-3xl">
                 {config.title}

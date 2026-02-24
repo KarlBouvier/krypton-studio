@@ -2,21 +2,38 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import {
+  getSectionContainerClasses,
+  getSectionTitleClasses,
+  getSectionSubtitleClasses,
+} from "@/lib/sectionStyles";
 import type { HeroConfig } from "@/lib/types";
+import type { Variant } from "@/lib/types";
 
-interface HeroProps {
+export interface HeroSectionProps {
   config: HeroConfig;
+  variant: Variant;
+  sectionId?: string;
   className?: string;
 }
 
-export function Hero({ config, className }: HeroProps) {
+export function HeroSection({
+  config,
+  variant,
+  sectionId = "hero",
+  className,
+}: HeroSectionProps) {
   const hasBgImage = Boolean(config.image?.trim());
 
   return (
     <section
-      id="hero"
+      id={sectionId}
       className={cn(
-        "relative flex min-h-[70vh] flex-col items-center justify-center px-4 py-20 text-center sm:px-6 md:min-h-[80vh]",
+        getSectionContainerClasses(
+          variant,
+          "relative flex min-h-[70vh] flex-col items-center justify-center px-4 py-20 text-center sm:px-6 md:min-h-[80vh]",
+          { noPadding: true }
+        ),
         hasBgImage && "min-h-[80vh] md:min-h-[90vh]",
         className
       )}
@@ -42,7 +59,8 @@ export function Hero({ config, className }: HeroProps) {
             "text-4xl font-bold tracking-tight drop-shadow-sm sm:text-5xl md:text-6xl",
             hasBgImage
               ? "text-white [text-shadow:0_2px_4px_rgba(0,0,0,0.5)]"
-              : "text-foreground"
+              : "text-foreground",
+            variant === "luxe" && "tracking-wide"
           )}
         >
           {config.title}
@@ -50,6 +68,7 @@ export function Hero({ config, className }: HeroProps) {
         {config.subtitle && (
           <p
             className={cn(
+              getSectionSubtitleClasses(),
               "text-lg sm:text-xl md:text-2xl",
               hasBgImage
                 ? "text-white/95 [text-shadow:0_1px_2px_rgba(0,0,0,0.5)]"

@@ -5,6 +5,8 @@
   "tagline": "Haute coiffure & bien-être",
   "nav": {
     "logoText": "Atelier Capillaire",
+    "menuOpenLabel": "Ouvrir le menu",
+    "menuCloseLabel": "Fermer le menu",
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Prestations", "href": "#services" },
@@ -108,6 +110,18 @@
   "booking": {
     "title": "Prendre rendez-vous",
     "subtitle": "Choisissez votre créneau pour une expérience sur mesure",
-    "successMessage": "Votre demande de rendez-vous a bien été enregistrée. Nous vous recontacterons pour confirmer."
+    "successMessage": "Votre demande de rendez-vous a bien été enregistrée. Nous vous recontacterons pour confirmer.",
+    "formLabels": {
+      "nameLabel": "Nom",
+      "emailLabel": "Email",
+      "dateLabel": "Date",
+      "timeLabel": "Heure",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean@exemple.fr",
+      "submitLabel": "Envoyer la demande",
+      "submittingLabel": "Envoi en cours…",
+      "errorGeneric": "Une erreur est survenue.",
+      "connectionError": "Erreur de connexion. Réessayez plus tard."
+    }
   }
 }

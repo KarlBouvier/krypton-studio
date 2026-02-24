@@ -5,6 +5,8 @@
   "tagline": "Fine dining reimagined",
   "nav": {
     "logoText": "Le Bistrot Doré",
+    "menuOpenLabel": "Ouvrir le menu",
+    "menuCloseLabel": "Fermer le menu",
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Carte", "href": "#menu" },
@@ -60,6 +62,7 @@
     ]
   },
   "todaysSpecial": {
+    "badgeLabel": "Plat du jour",
     "title": "Risotto aux cèpes et truffe noire",
     "description": "Riz carnaroli, parmesan 24 mois, copeaux de truffe noire d'Alba.",
     "price": "32 €",
@@ -103,6 +106,18 @@
   "booking": {
     "title": "Réservation",
     "subtitle": "Réservez votre table en quelques clics",
-    "successMessage": "Votre réservation a bien été enregistrée. Nous vous recontacterons pour confirmer."
+    "successMessage": "Votre réservation a bien été enregistrée. Nous vous recontacterons pour confirmer.",
+    "formLabels": {
+      "nameLabel": "Nom",
+      "emailLabel": "Email",
+      "dateLabel": "Date",
+      "timeLabel": "Heure",
+      "namePlaceholder": "Jean Dupont",
+      "emailPlaceholder": "jean@exemple.fr",
+      "submitLabel": "Envoyer la demande",
+      "submittingLabel": "Envoi en cours…",
+      "errorGeneric": "Une erreur est survenue.",
+      "connectionError": "Erreur de connexion. Réessayez plus tard."
+    }
   }
 }
