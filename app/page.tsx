@@ -11,7 +11,7 @@ export default function HomePage() {
           Krypton Studio
         </h1>
         <p className="mt-4 text-muted-foreground">
-          Choisissez un secteur et une variante pour voir le démo.
+          Choisissez un secteur et une variante pour voir la démo.
         </p>
         <ul className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {demos.map(({ sector, variant }) => (

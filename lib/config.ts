@@ -44,16 +44,7 @@ export async function loadConfig(
   }
 }
 
-export function getThemeClass(variant: string, sector?: string): string {
-  const luxe = variant === "luxe" ? " theme-luxe" : "";
-  if (sector === "restaurant" || sector === "pizzeria") {
-    return `theme-warm${luxe}`.trim();
-  }
-  if (sector === "coiffeur") {
-    return `theme-coiffeur${luxe}`.trim();
-  }
-  return luxe.trim() || "";
-}
+export { getThemeClass } from "@/lib/theme";
 
 export function getAvailableDemos(): { sector: string; variant: string }[] {
   return Object.keys(configLoaders).map((key) => {

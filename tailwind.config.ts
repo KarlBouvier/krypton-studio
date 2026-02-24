@@ -11,6 +11,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        /* Semantic tokens — components adapt automatically by variant */
+        "background-primary": "hsl(var(--background-primary))",
+        "text-primary": "hsl(var(--text-primary))",
+        "accent-primary": "hsl(var(--accent-primary))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

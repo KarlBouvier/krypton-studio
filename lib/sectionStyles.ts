@@ -3,27 +3,27 @@ import { cn } from "./utils";
 
 /**
  * Variant-based section container styles.
- * Keeps sections independent and consistent across luxe vs classic.
+ * One padding string per variant to avoid conflicting Tailwind classes.
  */
 export function getSectionContainerClasses(
   variant: Variant,
   baseClasses: string,
   options?: { noPadding?: boolean }
 ): string {
-  const padding = options?.noPadding
-    ? ""
-    : cn(
-        "py-16 md:py-24",
-        variant === "luxe" && "md:py-28",
-        variant === "classic" && "py-14 md:py-20"
-      );
+  if (options?.noPadding) {
+    return baseClasses;
+  }
+  const padding =
+    variant === "luxe"
+      ? "py-16 md:py-24 lg:py-28"
+      : "py-16 md:py-24";
   return cn(baseClasses, padding);
 }
 
-/** Heading (h2) style for section titles */
+/** Heading (h2) style for section titles — uses semantic text.primary */
 export function getSectionTitleClasses(variant: Variant): string {
   return cn(
-    "text-3xl font-bold tracking-tight text-foreground sm:text-4xl",
+    "text-3xl font-bold tracking-tight text-text-primary sm:text-4xl",
     variant === "luxe" && "tracking-wide",
     variant === "classic" && "font-semibold"
   );

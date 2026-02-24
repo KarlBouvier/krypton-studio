@@ -1,4 +1,5 @@
-import { getThemeClass } from "@/lib/config";
+import { getThemeId } from "@/lib/theme";
+import type { ThemeVariant } from "@/lib/theme";
 
 export default async function SectorVariantLayout({
   children,
@@ -8,13 +9,14 @@ export default async function SectorVariantLayout({
   params: Promise<{ sector: string; variant: string }>;
 }) {
   const { sector, variant } = await params;
-  const themeClass = getThemeClass(variant, sector);
+  const themeId = getThemeId(variant as ThemeVariant, sector);
 
   return (
-    <div className={themeClass}>
-      <div className="min-h-screen bg-background text-foreground font-sans antialiased">
-        {children}
-      </div>
+    <div
+      data-theme={themeId}
+      className="min-h-screen bg-background-primary text-text-primary font-sans antialiased"
+    >
+      {children}
     </div>
   );
 }

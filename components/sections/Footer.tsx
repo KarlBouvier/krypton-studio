@@ -7,6 +7,8 @@ interface FooterProps {
   className?: string;
 }
 
+const DEVELOPED_BY_URL = "https://www.kryptonconsult.com/";
+
 export function Footer({ config, className }: FooterProps) {
   return (
     <footer
@@ -22,6 +24,17 @@ export function Footer({ config, className }: FooterProps) {
               <p className="font-medium text-foreground">{config.tagline}</p>
             )}
             <p className="mt-1 text-sm text-muted-foreground">{config.copyright}</p>
+            <p className="mt-2 text-xs text-muted-foreground">
+              Développé par{" "}
+              <Link
+                href={DEVELOPED_BY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-foreground"
+              >
+                KryptonConsult
+              </Link>
+            </p>
           </div>
           {config.links && config.links.length > 0 && (
             <ul className="flex flex-wrap justify-center gap-6 md:justify-end">
