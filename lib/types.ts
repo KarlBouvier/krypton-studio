@@ -14,6 +14,10 @@ export interface SiteConfig {
   gallery: GalleryConfig;
   /** Restaurant/pizzeria: opening hours block */
   openingHours?: OpeningHoursConfig;
+  /** Coiffeur: pricing list */
+  pricing?: PricingConfig;
+  /** Coiffeur: team members */
+  team?: TeamConfig;
   testimonials: TestimonialsConfig;
   footer: FooterConfig;
   booking?: BookingConfig;
@@ -106,4 +110,29 @@ export interface BookingConfig {
   title: string;
   subtitle?: string;
   successMessage: string;
+}
+
+export interface PricingItem {
+  name: string;
+  description?: string;
+  price: string;
+}
+
+export interface PricingConfig {
+  title: string;
+  subtitle?: string;
+  items: PricingItem[];
+}
+
+export interface TeamMember {
+  name: string;
+  role?: string;
+  image?: string;
+  bio?: string;
+}
+
+export interface TeamConfig {
+  title: string;
+  subtitle?: string;
+  members: TeamMember[];
 }

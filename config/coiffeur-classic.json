@@ -8,7 +8,9 @@
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Prestations", "href": "#services" },
+      { "label": "Tarifs", "href": "#pricing" },
       { "label": "Galerie", "href": "#gallery" },
+      { "label": "Équipe", "href": "#team" },
       { "label": "RDV", "href": "#booking" },
       { "label": "Avis", "href": "#testimonials" }
     ]
@@ -17,49 +19,77 @@
     "title": "Bienvenue chez Coiffure Marie",
     "subtitle": "Coupe, couleur et soins pour toute la famille, dans la bonne humeur.",
     "ctaText": "Réserver",
-    "ctaHref": "#booking"
+    "ctaHref": "#booking",
+    "image": "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=1920&h=1080&fit=crop"
   },
   "services": {
-    "title": "Prestations & Tarifs",
-    "subtitle": "Des prix transparents, sans surprise",
+    "title": "Prestations",
+    "subtitle": "Coupe, coloration, styling",
     "items": [
       {
-        "title": "Coupe femme / homme",
-        "description": "Coupe, shampooing et brushing inclus. Tarifs selon longueur."
+        "title": "Coupe",
+        "description": "Coupe femme, homme ou enfant. Shampooing et brushing inclus."
       },
       {
         "title": "Couleur & Mèches",
         "description": "Teinture, balayage et reflets. Devis sur demande."
       },
       {
-        "title": "Soins",
-        "description": "Masques, soins kératine et brushing soin."
+        "title": "Coiffure & Styling",
+        "description": "Brushing, mise en plis, coiffure de soirée."
       }
     ]
   },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Prix indicatifs — Nous contacter pour un devis précis",
+    "items": [
+      { "name": "Coupe femme", "description": "Coupe, shampooing, brushing", "price": "42 €" },
+      { "name": "Coupe homme", "description": "", "price": "28 €" },
+      { "name": "Coupe enfant", "description": "- 12 ans", "price": "22 €" },
+      { "name": "Teinture", "description": "Selon longueur", "price": "À partir de 55 €" },
+      { "name": "Mèches / Balayage", "description": "Devis personnalisé", "price": "Sur devis" },
+      { "name": "Soin", "description": "Masque ou soin kératine", "price": "15 €" },
+      { "name": "Brushing", "description": "", "price": "18 €" }
+    ]
+  },
   "gallery": {
-    "title": "Nos réalisations",
+    "title": "Avant / Après",
     "subtitle": "Quelques exemples de notre travail",
     "images": [
+      { "src": "https://images.unsplash.com/photo-1595476108010-b4d1f769b0b2?w=600&h=400&fit=crop", "alt": "Avant — Coupe" },
+      { "src": "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&h=400&fit=crop", "alt": "Après — Coiffure" },
       { "src": "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=600&h=400&fit=crop", "alt": "Salon" },
-      { "src": "https://images.unsplash.com/photo-1595476108010-b4d1f769b0b2?w=600&h=400&fit=crop", "alt": "Coupe" },
-      { "src": "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&h=400&fit=crop", "alt": "Coiffure" }
+      { "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop", "alt": "Réalisation couleur" }
+    ]
+  },
+  "team": {
+    "title": "L'équipe",
+    "subtitle": "Votre salon à taille humaine",
+    "members": [
+      {
+        "name": "Marie",
+        "role": "Gérante & Coiffeuse",
+        "bio": "20 ans d'expérience. Coupe, couleur et soins."
+      },
+      {
+        "name": "Thomas",
+        "role": "Coiffeur",
+        "bio": "Spécialiste coupe homme et barbe."
+      },
+      {
+        "name": "Julie",
+        "role": "Apprentie",
+        "bio": "En formation, vous accueille avec le sourire."
+      }
     ]
   },
   "testimonials": {
     "title": "Avis clients",
     "subtitle": "",
     "items": [
-      {
-        "quote": "Marie est à l'écoute et fait exactement ce qu'on lui demande. Top !",
-        "author": "Nathalie D.",
-        "role": ""
-      },
-      {
-        "quote": "Salon propre, prix corrects. Je reviens toujours avec plaisir.",
-        "author": "David P.",
-        "role": ""
-      }
+      { "quote": "Marie est à l'écoute et fait exactement ce qu'on lui demande. Top !", "author": "Nathalie D.", "role": "" },
+      { "quote": "Salon propre, prix corrects. Je reviens toujours avec plaisir.", "author": "David P.", "role": "" }
     ]
   },
   "footer": {

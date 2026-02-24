@@ -88,6 +88,44 @@
     --input: 15 15% 22%;
     --ring: 24 95% 53%;
   }
+
+  /* Coiffeur: classic — white, minimal, modern */
+  .theme-coiffeur {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 9%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 9%;
+  }
+
+  /* Coiffeur: luxe — black, gold, premium */
+  .theme-coiffeur.theme-luxe {
+    --background: 0 0% 4%;
+    --foreground: 43 20% 95%;
+    --card: 0 0% 7%;
+    --card-foreground: 43 20% 95%;
+    --primary: 43 96% 56%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 43 20% 95%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 43 15% 65%;
+    --accent: 43 70% 45%;
+    --accent-foreground: 43 20% 95%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 43 96% 56%;
+  }
 }
 
 @layer base {
@@ -103,5 +141,12 @@
   .theme-warm.theme-luxe h3 {
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     letter-spacing: 0.02em;
+  }
+  /* Coiffeur luxe: refined serif for headings */
+  .theme-coiffeur.theme-luxe h1,
+  .theme-coiffeur.theme-luxe h2,
+  .theme-coiffeur.theme-luxe h3 {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    letter-spacing: 0.03em;
   }
 }

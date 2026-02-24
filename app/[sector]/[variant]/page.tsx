@@ -7,6 +7,8 @@ import { MenuSection } from "@/components/sections/MenuSection";
 import { Services } from "@/components/sections/Services";
 import { Gallery } from "@/components/sections/Gallery";
 import { OpeningHours } from "@/components/sections/OpeningHours";
+import { PricingSection } from "@/components/sections/PricingSection";
+import { TeamSection } from "@/components/sections/TeamSection";
 import { BookingForm } from "@/components/sections/BookingForm";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { Footer } from "@/components/sections/Footer";
@@ -33,11 +35,13 @@ export default async function SectorVariantPage({ params }: PageProps) {
       ) : (
         <Services config={config.services} sector={config.sector} />
       )}
+      {config.pricing && <PricingSection config={config.pricing} />}
       <Gallery config={config.gallery} />
       {config.openingHours && (
         <OpeningHours config={config.openingHours} />
       )}
       {config.booking && <BookingForm config={config.booking} />}
+      {config.team && <TeamSection config={config.team} />}
       <Testimonials config={config.testimonials} />
       <Footer config={config.footer} />
     </>

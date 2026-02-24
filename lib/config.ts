@@ -46,9 +46,13 @@ export async function loadConfig(
 
 export function getThemeClass(variant: string, sector?: string): string {
   const luxe = variant === "luxe" ? " theme-luxe" : "";
-  const warm =
-    sector === "restaurant" || sector === "pizzeria" ? " theme-warm" : "";
-  return `${warm}${luxe}`.trim() || "";
+  if (sector === "restaurant" || sector === "pizzeria") {
+    return `theme-warm${luxe}`.trim();
+  }
+  if (sector === "coiffeur") {
+    return `theme-coiffeur${luxe}`.trim();
+  }
+  return luxe.trim() || "";
 }
 
 export function getAvailableDemos(): { sector: string; variant: string }[] {

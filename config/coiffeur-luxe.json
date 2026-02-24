@@ -8,7 +8,9 @@
     "links": [
       { "label": "Accueil", "href": "#hero" },
       { "label": "Prestations", "href": "#services" },
+      { "label": "Tarifs", "href": "#pricing" },
       { "label": "Galerie", "href": "#gallery" },
+      { "label": "Équipe", "href": "#team" },
       { "label": "Rendez-vous", "href": "#booking" },
       { "label": "Avis", "href": "#testimonials" }
     ]
@@ -17,49 +19,82 @@
     "title": "L'excellence capillaire",
     "subtitle": "Coupe, couleur et soins sur mesure dans un écrin de raffinement.",
     "ctaText": "Prendre rendez-vous",
-    "ctaHref": "#booking"
+    "ctaHref": "#booking",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&h=1080&fit=crop"
   },
   "services": {
     "title": "Nos Prestations",
     "subtitle": "Des soins d'exception pour cheveux et cuir chevelu",
     "items": [
       {
-        "title": "Coupe & Styling",
-        "description": "Coupe sur mesure et coiffure de création pour toutes occasions."
+        "title": "Coupe",
+        "description": "Coupe sur mesure, conseil personnalisé et finitions impeccables."
       },
       {
         "title": "Couleur & Balayage",
         "description": "Teintures premium et techniques artistiques pour un rendu unique."
       },
       {
-        "title": "Soins & Bien-être",
-        "description": "Soins profonds, massages crâniens et rituels signature."
+        "title": "Coiffure & Styling",
+        "description": "Brushing, mise en plis et coiffures de création pour toutes occasions."
       }
     ]
   },
+  "pricing": {
+    "title": "Tarifs",
+    "subtitle": "Prestations et soins — Devis personnalisé sur demande",
+    "items": [
+      { "name": "Coupe femme", "description": "Shampooing, coupe, brushing", "price": "65 €" },
+      { "name": "Coupe homme", "description": "Coupe et finition", "price": "45 €" },
+      { "name": "Coupe enfant (-12 ans)", "description": "", "price": "35 €" },
+      { "name": "Teinture complète", "description": "Couleur racines à pointes", "price": "À partir de 85 €" },
+      { "name": "Balayage / Mèches", "description": "Selon longueur et technique", "price": "À partir de 120 €" },
+      { "name": "Soin profond", "description": "Masque, massage crânien", "price": "35 €" },
+      { "name": "Brushing", "description": "Après coupe ou seul", "price": "25 €" }
+    ]
+  },
   "gallery": {
-    "title": "Réalisations",
-    "subtitle": "Un aperçu de notre travail",
+    "title": "Avant / Après",
+    "subtitle": "Réalisations et transformations",
     "images": [
-      { "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop", "alt": "Salon" },
-      { "src": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop", "alt": "Coiffure" },
-      { "src": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&h=400&fit=crop", "alt": "Soin" }
+      { "src": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=400&fit=crop", "alt": "Avant — Coupe et couleur" },
+      { "src": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&h=400&fit=crop", "alt": "Après — Coiffure finale" },
+      { "src": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=400&fit=crop", "alt": "Salon et ambiance" },
+      { "src": "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=600&h=400&fit=crop", "alt": "Détail coloration" },
+      { "src": "https://images.unsplash.com/photo-1595476108010-b4d1f769b0b2?w=600&h=400&fit=crop", "alt": "Avant — Brushing" },
+      { "src": "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=600&h=400&fit=crop", "alt": "Après — Mise en plis" }
+    ]
+  },
+  "team": {
+    "title": "Notre Équipe",
+    "subtitle": "Des experts passionnés à votre écoute",
+    "members": [
+      {
+        "name": "Sophie Laurent",
+        "role": "Directrice & Styliste couleur",
+        "image": "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&fit=crop",
+        "bio": "Plus de 15 ans d'expérience en haute coiffure et formation à Paris."
+      },
+      {
+        "name": "Marc Dubois",
+        "role": "Coiffeur créateur",
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+        "bio": "Spécialiste coupe homme et femme, tendances et techniques modernes."
+      },
+      {
+        "name": "Léa Martin",
+        "role": "Styliste & Soins",
+        "image": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400&h=400&fit=crop",
+        "bio": "Expert en soins capillaires et rituels bien-être."
+      }
     ]
   },
   "testimonials": {
     "title": "Ils nous font confiance",
     "subtitle": "Témoignages de notre clientèle",
     "items": [
-      {
-        "quote": "Un vrai moment de luxe. Mon coiffeur n'a jamais été aussi beau.",
-        "author": "Camille L.",
-        "role": "Cliente"
-      },
-      {
-        "quote": "Équipe talentueuse et accueil irréprochable. Je recommande les yeux fermés.",
-        "author": "Julien M.",
-        "role": ""
-      }
+      { "quote": "Un vrai moment de luxe. Mon coiffeur n'a jamais été aussi beau.", "author": "Camille L.", "role": "Cliente" },
+      { "quote": "Équipe talentueuse et accueil irréprochable. Je recommande les yeux fermés.", "author": "Julien M.", "role": "" }
     ]
   },
   "footer": {

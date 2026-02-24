@@ -5,6 +5,8 @@ export { MenuSection } from "./MenuSection";
 export { Services } from "./Services";
 export { Gallery } from "./Gallery";
 export { OpeningHours } from "./OpeningHours";
+export { PricingSection } from "./PricingSection";
+export { TeamSection } from "./TeamSection";
 export { BookingForm } from "./BookingForm";
 export { Testimonials } from "./Testimonials";
 export { Footer } from "./Footer";
