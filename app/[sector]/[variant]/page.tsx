@@ -27,35 +27,71 @@ export default async function SectorVariantPage({ params }: PageProps) {
   }
 
   const v = config.variant as Variant;
+  const animationsEnabled = config.animations?.enabled ?? false;
 
   return (
     <>
       <Navbar config={config.nav} />
-      <HeroSection config={config.hero} variant={v} />
+      <HeroSection
+        config={config.hero}
+        variant={v}
+        animationsEnabled={animationsEnabled}
+      />
       {config.todaysSpecial && (
-        <TodaysSpecial config={config.todaysSpecial} variant={v} />
+        <TodaysSpecial
+          config={config.todaysSpecial}
+          variant={v}
+          animationsEnabled={animationsEnabled}
+        />
       )}
       {config.menu ? (
-        <MenuSection config={config.menu} variant={v} />
+        <MenuSection
+          config={config.menu}
+          variant={v}
+          animationsEnabled={animationsEnabled}
+        />
       ) : (
         <ServicesSection
           config={config.services}
           variant={v}
           sector={config.sector}
+          animationsEnabled={animationsEnabled}
         />
       )}
       {config.pricing && (
-        <PricingSection config={config.pricing} variant={v} />
+        <PricingSection
+          config={config.pricing}
+          variant={v}
+          animationsEnabled={animationsEnabled}
+        />
       )}
-      <GallerySection config={config.gallery} variant={v} />
+      <GallerySection
+        config={config.gallery}
+        variant={v}
+        animationsEnabled={animationsEnabled}
+      />
       {config.openingHours && (
         <OpeningHours config={config.openingHours} />
       )}
       {config.booking && (
-        <BookingForm config={config.booking} variant={v} />
+        <BookingForm
+          config={config.booking}
+          variant={v}
+          animationsEnabled={animationsEnabled}
+        />
       )}
-      {config.team && <TeamSection config={config.team} variant={v} />}
-      <TestimonialsSection config={config.testimonials} variant={v} />
+      {config.team && (
+        <TeamSection
+          config={config.team}
+          variant={v}
+          animationsEnabled={animationsEnabled}
+        />
+      )}
+      <TestimonialsSection
+        config={config.testimonials}
+        variant={v}
+        animationsEnabled={animationsEnabled}
+      />
       <Footer config={config.footer} />
     </>
   );

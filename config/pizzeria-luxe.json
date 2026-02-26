@@ -3,6 +3,11 @@
   "variant": "luxe",
   "siteName": "Forno & Stella",
   "tagline": "Pizza d'exception",
+  "animations": {
+    "enabled": true,
+    "type": "smooth",
+    "intensity": "low"
+  },
   "nav": {
     "logoText": "Forno & Stella",
     "menuOpenLabel": "Ouvrir le menu",
@@ -107,6 +112,25 @@
     "title": "Réservation",
     "subtitle": "Réservez votre table pour une expérience inoubliable",
     "successMessage": "Votre réservation est enregistrée. Un email de confirmation vous a été envoyé.",
+    "slotDurationMinutes": 30,
+    "closedDays": [0, 1],
+    "openingHours": [
+      { "dayOfWeek": 1, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 2, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 3, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 4, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 5, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 6, "open": "09:00", "close": "17:00" }
+    ],
+    "blockedSlots": [
+      { "date": "2026-03-15", "start": "12:00", "end": "14:00" },
+      { "date": "2026-03-10", "start": "17:00", "end": "19:00" },
+      { "date": "2026-03-20", "start": "09:00", "end": "12:00" }
+    ],
+    "fullDays": [
+      "2026-03-03",
+      "2026-03-06"
+    ],
     "formLabels": {
       "nameLabel": "Nom",
       "emailLabel": "Email",

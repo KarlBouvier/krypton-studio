@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AnimateOnScroll } from "@/components/ui/animations";
 import { cn } from "@/lib/utils";
 import type { TodaysSpecialConfig } from "@/lib/types";
 import type { Variant } from "@/lib/types";
@@ -10,6 +11,7 @@ export interface TodaysSpecialProps {
   variant: Variant;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function TodaysSpecial({
@@ -17,9 +19,13 @@ export function TodaysSpecial({
   variant,
   sectionId = "todays-special",
   className,
+  animationsEnabled = false,
 }: TodaysSpecialProps) {
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         "border-t border-border bg-primary/10 py-10 md:py-14",
@@ -58,6 +64,6 @@ export function TodaysSpecial({
           )}
         </div>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

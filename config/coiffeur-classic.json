@@ -3,6 +3,11 @@
   "variant": "classic",
   "siteName": "Coiffure Marie",
   "tagline": "Coiffure mixte, coupe et couleur",
+  "animations": {
+    "enabled": false,
+    "type": "smooth",
+    "intensity": "low"
+  },
   "nav": {
     "logoText": "Coiffure Marie",
     "menuOpenLabel": "Ouvrir le menu",
@@ -104,8 +109,27 @@
   },
   "booking": {
     "title": "Réserver un créneau",
-    "subtitle": "Indiquez vos coordonnées et la date souhaitée",
+    "subtitle": "Choisissez une date, un créneau et laissez vos coordonnées",
     "successMessage": "Demande envoyée. Nous vous confirmerons par téléphone ou SMS.",
+    "slotDurationMinutes": 30,
+    "closedDays": [0, 1],
+    "openingHours": [
+      { "dayOfWeek": 1, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 2, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 3, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 4, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 5, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 6, "open": "09:00", "close": "17:00" }
+    ],
+    "blockedSlots": [
+      { "date": "2026-03-15", "start": "12:00", "end": "14:00" },
+      { "date": "2026-03-10", "start": "17:00", "end": "19:00" },
+      { "date": "2026-03-20", "start": "09:00", "end": "12:00" }
+    ],
+    "fullDays": [
+      "2026-03-03",
+      "2026-03-06"
+    ],
     "formLabels": {
       "nameLabel": "Nom",
       "emailLabel": "Email",

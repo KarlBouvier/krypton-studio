@@ -7,12 +7,14 @@ import {
 } from "@/lib/sectionStyles";
 import type { GalleryConfig } from "@/lib/types";
 import type { Variant } from "@/lib/types";
+import { AnimateOnScroll, ScaleOnHover } from "@/components/ui/animations";
 
 export interface GallerySectionProps {
   config: GalleryConfig;
   variant: Variant;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function GallerySection({
@@ -20,9 +22,13 @@ export function GallerySection({
   variant,
   sectionId = "gallery",
   className,
+  animationsEnabled = false,
 }: GallerySectionProps) {
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         getSectionContainerClasses(variant, "border-t border-border"),
@@ -38,21 +44,20 @@ export function GallerySection({
         </div>
         <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {config.images.map((img, i) => (
-            <div
-              key={i}
-              className="relative aspect-[3/2] overflow-hidden rounded-lg border border-border bg-muted"
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-            </div>
+            <ScaleOnHover key={i} enabled={animationsEnabled}>
+              <div className="relative aspect-[3/2] overflow-hidden rounded-lg border border-border bg-muted">
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+              </div>
+            </ScaleOnHover>
           ))}
         </div>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

@@ -23,6 +23,8 @@ export interface SiteConfig {
   booking?: BookingConfig;
   /** Restaurant/pizzeria: today's special highlight */
   todaysSpecial?: TodaysSpecialConfig;
+  /** When true, enables subtle UI animations (fade-in, hover, step transitions). */
+  animations?: { enabled?: boolean };
 }
 
 export interface MenuCategory {
@@ -124,11 +126,35 @@ export interface BookingFormLabels {
   connectionError?: string;
 }
 
+/** Day of week 0 = Sunday, 6 = Saturday. open/close in "HH:mm". */
+export interface BookingOpeningHoursEntry {
+  dayOfWeek: number;
+  open: string;
+  close: string;
+}
+
+/** Blocked time range on a specific date (YYYY-MM-DD). end optional = rest of day. */
+export interface BookingBlockedSlot {
+  date: string;
+  start: string;
+  end?: string;
+}
+
 export interface BookingConfig {
   title: string;
   subtitle?: string;
   successMessage: string;
   formLabels: BookingFormLabels;
+  /** Slot length in minutes (e.g. 30). Default 30. */
+  slotDurationMinutes?: number;
+  /** Days closed: 0 = Sunday … 6 = Saturday. */
+  closedDays?: number[];
+  /** Opening hours per day for slot generation. If absent, defaults to Mon–Fri 9:00–18:00. */
+  openingHours?: BookingOpeningHoursEntry[];
+  /** Blocked time ranges on specific dates. */
+  blockedSlots?: BookingBlockedSlot[];
+  /** Dates (YYYY-MM-DD) that are fully booked (no slots). */
+  fullDays?: string[];
 }
 
 export interface PricingItem {

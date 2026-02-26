@@ -6,12 +6,14 @@ import {
 } from "@/lib/sectionStyles";
 import type { PricingConfig } from "@/lib/types";
 import type { Variant } from "@/lib/types";
+import { AnimateOnScroll } from "@/components/ui/animations";
 
 export interface PricingSectionProps {
   config: PricingConfig;
   variant: Variant;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function PricingSection({
@@ -19,9 +21,13 @@ export function PricingSection({
   variant,
   sectionId = "pricing",
   className,
+  animationsEnabled = false,
 }: PricingSectionProps) {
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         getSectionContainerClasses(
@@ -61,6 +67,6 @@ export function PricingSection({
           ))}
         </ul>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

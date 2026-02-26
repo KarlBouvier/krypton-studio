@@ -6,12 +6,14 @@ import {
 } from "@/lib/sectionStyles";
 import type { MenuConfig } from "@/lib/types";
 import type { Variant } from "@/lib/types";
+import { AnimateOnScroll } from "@/components/ui/animations";
 
 export interface MenuSectionProps {
   config: MenuConfig;
   variant: Variant;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function MenuSection({
@@ -19,9 +21,13 @@ export function MenuSection({
   variant,
   sectionId = "menu",
   className,
+  animationsEnabled = false,
 }: MenuSectionProps) {
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         getSectionContainerClasses(
@@ -72,6 +78,6 @@ export function MenuSection({
           ))}
         </div>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

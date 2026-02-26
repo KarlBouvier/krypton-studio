@@ -8,6 +8,7 @@ import {
 import type { ServicesConfig } from "@/lib/types";
 import type { Variant } from "@/lib/types";
 import { UtensilsCrossed, Pizza, Scissors } from "lucide-react";
+import { AnimateOnScroll, ScaleOnHover } from "@/components/ui/animations";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   default: UtensilsCrossed,
@@ -19,10 +20,10 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 export interface ServicesSectionProps {
   config: ServicesConfig;
   variant: Variant;
-  /** Optional sector for icon choice (restaurant, pizzeria, coiffeur) */
   sector?: string;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function ServicesSection({
@@ -31,11 +32,15 @@ export function ServicesSection({
   sector = "default",
   sectionId = "services",
   className,
+  animationsEnabled = false,
 }: ServicesSectionProps) {
   const Icon = iconMap[sector] ?? iconMap.default;
 
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         getSectionContainerClasses(
@@ -54,13 +59,14 @@ export function ServicesSection({
         </div>
         <ul className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {config.items.map((item, i) => (
-            <li
-              key={i}
-              className={cn(
-                getCardClasses(variant),
-                "p-6 transition-shadow hover:shadow-md"
-              )}
-            >
+            <li key={i}>
+              <ScaleOnHover enabled={animationsEnabled} className="h-full">
+                <div
+                  className={cn(
+                    getCardClasses(variant),
+                    "h-full p-6 transition-shadow hover:shadow-md"
+                  )}
+                >
               <div className="flex items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
                   <Icon className="h-5 w-5" />
@@ -70,10 +76,12 @@ export function ServicesSection({
                 </h3>
               </div>
               <p className="mt-3 text-muted-foreground">{item.description}</p>
+                </div>
+              </ScaleOnHover>
             </li>
           ))}
         </ul>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import { AnimateOnScroll } from "@/components/ui/animations";
 import { cn } from "@/lib/utils";
 import {
   getSectionContainerClasses,
@@ -15,6 +16,7 @@ export interface HeroSectionProps {
   variant: Variant;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function HeroSection({
@@ -22,11 +24,15 @@ export function HeroSection({
   variant,
   sectionId = "hero",
   className,
+  animationsEnabled = false,
 }: HeroSectionProps) {
   const hasBgImage = Boolean(config.image?.trim());
 
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         getSectionContainerClasses(
@@ -86,6 +92,6 @@ export function HeroSection({
           </div>
         )}
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

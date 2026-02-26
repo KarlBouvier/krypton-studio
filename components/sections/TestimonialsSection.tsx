@@ -8,12 +8,14 @@ import {
 import type { TestimonialsConfig } from "@/lib/types";
 import type { Variant } from "@/lib/types";
 import { Quote } from "lucide-react";
+import { AnimateOnScroll, ScaleOnHover } from "@/components/ui/animations";
 
 export interface TestimonialsSectionProps {
   config: TestimonialsConfig;
   variant: Variant;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function TestimonialsSection({
@@ -21,9 +23,13 @@ export function TestimonialsSection({
   variant,
   sectionId = "testimonials",
   className,
+  animationsEnabled = false,
 }: TestimonialsSectionProps) {
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         getSectionContainerClasses(
@@ -42,17 +48,21 @@ export function TestimonialsSection({
         </div>
         <ul className="mt-12 grid gap-8 md:grid-cols-2">
           {config.items.map((item, i) => (
-            <li key={i} className={cn(getCardClasses(variant), "p-6")}>
-              <Quote className="h-8 w-8 text-primary/50" />
-              <p className="mt-4 text-foreground">{item.quote}</p>
-              <p className="mt-4 font-medium text-foreground">{item.author}</p>
-              {item.role && (
-                <p className="text-sm text-muted-foreground">{item.role}</p>
-              )}
+            <li key={i}>
+              <ScaleOnHover enabled={animationsEnabled} className="h-full">
+                <div className={cn(getCardClasses(variant), "h-full p-6")}>
+                  <Quote className="h-8 w-8 text-primary/50" />
+                  <p className="mt-4 text-foreground">{item.quote}</p>
+                  <p className="mt-4 font-medium text-foreground">{item.author}</p>
+                  {item.role && (
+                    <p className="text-sm text-muted-foreground">{item.role}</p>
+                  )}
+                </div>
+              </ScaleOnHover>
             </li>
           ))}
         </ul>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

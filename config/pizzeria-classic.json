@@ -3,6 +3,11 @@
   "variant": "classic",
   "siteName": "Pizza Roma",
   "tagline": "Pizza au feu de bois",
+  "animations": {
+    "enabled": true,
+    "type": "smooth",
+    "intensity": "low"
+  },
   "nav": {
     "logoText": "Pizza Roma",
     "menuOpenLabel": "Ouvrir le menu",
@@ -108,6 +113,25 @@
     "title": "Réservation / Commande",
     "subtitle": "Réservez une table ou planifiez une commande",
     "successMessage": "Votre demande a bien été reçue. À très bientôt !",
+    "slotDurationMinutes": 30,
+    "closedDays": [0, 1],
+    "openingHours": [
+      { "dayOfWeek": 1, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 2, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 3, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 4, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 5, "open": "09:00", "close": "19:00" },
+      { "dayOfWeek": 6, "open": "09:00", "close": "17:00" }
+    ],
+    "blockedSlots": [
+      { "date": "2026-03-15", "start": "12:00", "end": "14:00" },
+      { "date": "2026-03-10", "start": "17:00", "end": "19:00" },
+      { "date": "2026-03-20", "start": "09:00", "end": "12:00" }
+    ],
+    "fullDays": [
+      "2026-03-03",
+      "2026-03-06"
+    ],
     "formLabels": {
       "nameLabel": "Nom",
       "emailLabel": "Email",

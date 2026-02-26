@@ -9,12 +9,14 @@ import {
 import type { TeamConfig } from "@/lib/types";
 import type { Variant } from "@/lib/types";
 import { User } from "lucide-react";
+import { AnimateOnScroll, ScaleOnHover } from "@/components/ui/animations";
 
 export interface TeamSectionProps {
   config: TeamConfig;
   variant: Variant;
   sectionId?: string;
   className?: string;
+  animationsEnabled?: boolean;
 }
 
 export function TeamSection({
@@ -22,9 +24,13 @@ export function TeamSection({
   variant,
   sectionId = "team",
   className,
+  animationsEnabled = false,
 }: TeamSectionProps) {
   return (
-    <section
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       id={sectionId}
       className={cn(
         getSectionContainerClasses(variant, "border-t border-border bg-background"),
@@ -40,13 +46,14 @@ export function TeamSection({
         </div>
         <ul className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {config.members.map((member, i) => (
-            <li
-              key={i}
-              className={cn(
-                getCardClasses(variant),
-                "flex flex-col items-center p-6 text-center"
-              )}
-            >
+            <li key={i}>
+              <ScaleOnHover enabled={animationsEnabled} className="h-full">
+                <div
+                  className={cn(
+                    getCardClasses(variant),
+                    "flex h-full flex-col items-center p-6 text-center"
+                  )}
+                >
               <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-full border-2 border-border bg-muted">
                 {member.image ? (
                   <Image
@@ -75,10 +82,12 @@ export function TeamSection({
                   {member.bio}
                 </p>
               )}
+                </div>
+              </ScaleOnHover>
             </li>
           ))}
         </ul>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }
