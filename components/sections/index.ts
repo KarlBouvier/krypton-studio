@@ -8,5 +8,6 @@ export { OpeningHours } from "./OpeningHours";
 export { PricingSection } from "./PricingSection";
 export { TeamSection } from "./TeamSection";
 export { BookingForm } from "./BookingForm";
+export { ContactSection } from "./ContactSection";
 export { TestimonialsSection } from "./TestimonialsSection";
 export { Footer } from "./Footer";

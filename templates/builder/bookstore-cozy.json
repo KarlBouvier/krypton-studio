@@ -1,0 +1,96 @@
+{
+  "type": "bookstore",
+  "variant": "classic",
+  "animations": { "enabled": true },
+  "sections": [
+    {
+      "id": "navbar",
+      "type": "navbar",
+      "props": {
+        "config": {
+          "logoText": "Librairie Cozy",
+          "menuOpenLabel": "Ouvrir le menu",
+          "menuCloseLabel": "Fermer le menu",
+          "links": [
+            { "label": "Accueil", "href": "#hero" },
+            { "label": "Sélection", "href": "#services" },
+            { "label": "Événements", "href": "#gallery" },
+            { "label": "Contact", "href": "#footer" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero",
+      "props": {
+        "config": {
+          "title": "Une librairie de quartier",
+          "subtitle": "Sélections, dédicaces, rencontres et coups de cœur.",
+          "ctaText": "Découvrir la sélection",
+          "ctaHref": "#services",
+          "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1920&h=1080&fit=crop"
+        }
+      }
+    },
+    {
+      "id": "services",
+      "type": "services",
+      "props": {
+        "sector": "default",
+        "config": {
+          "title": "Sélection du moment",
+          "subtitle": "Nos coups de cœur (config-driven)",
+          "items": [
+            { "title": "Roman", "description": "Une histoire immersive et lumineuse." },
+            { "title": "Essai", "description": "Pour comprendre le monde d’aujourd’hui." },
+            { "title": "Jeunesse", "description": "Albums et premières lectures." }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "props": {
+        "config": {
+          "title": "Événements",
+          "subtitle": "Rencontres, lectures, ateliers",
+          "images": [
+            { "src": "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=900&h=600&fit=crop", "alt": "Lecture" },
+            { "src": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=900&h=600&fit=crop", "alt": "Librairie" },
+            { "src": "https://images.unsplash.com/photo-1455885666463-552d9f71ad5a?w=900&h=600&fit=crop", "alt": "Atelier" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "props": {
+        "config": {
+          "title": "Avis",
+          "items": [
+            { "quote": "Accueil chaleureux, belles recommandations.", "author": "Clara" },
+            { "quote": "Parfait pour trouver un cadeau.", "author": "Olivier" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "props": {
+        "config": {
+          "tagline": "Librairie Cozy",
+          "copyright": "© 2026 Librairie Cozy.",
+          "links": [
+            { "label": "Mentions légales", "href": "#" },
+            { "label": "Contact", "href": "#hero" }
+          ]
+        }
+      }
+    }
+  ]
+}
+

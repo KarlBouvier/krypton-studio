@@ -54,6 +54,7 @@ export function HeroSection({
               className="object-cover"
               priority
               sizes="100vw"
+              unoptimized
             />
           </div>
           <div className="absolute inset-0 z-[1] bg-black/50" aria-hidden />

@@ -54,34 +54,35 @@ export function TeamSection({
                     "flex h-full flex-col items-center p-6 text-center"
                   )}
                 >
-              <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-full border-2 border-border bg-muted">
-                {member.image ? (
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                    sizes="128px"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center text-muted-foreground">
-                    <User className="h-14 w-14" aria-hidden />
+                  <div className="relative h-32 w-32 shrink-0 overflow-hidden rounded-full border-2 border-border bg-muted">
+                    {member.image ? (
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        fill
+                        className="object-cover"
+                        sizes="128px"
+                        unoptimized
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center text-muted-foreground">
+                        <User className="h-14 w-14" aria-hidden />
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-              <h3 className="mt-4 text-lg font-semibold text-foreground">
-                {member.name}
-              </h3>
-              {member.role && (
-                <p className="mt-1 text-sm font-medium text-primary">
-                  {member.role}
-                </p>
-              )}
-              {member.bio && (
-                <p className="mt-3 text-sm text-muted-foreground">
-                  {member.bio}
-                </p>
-              )}
+                  <h3 className="mt-4 text-lg font-semibold text-foreground">
+                    {member.name}
+                  </h3>
+                  {member.role && (
+                    <p className="mt-1 text-sm font-medium text-primary">
+                      {member.role}
+                    </p>
+                  )}
+                  {member.bio && (
+                    <p className="mt-3 text-sm text-muted-foreground">
+                      {member.bio}
+                    </p>
+                  )}
                 </div>
               </ScaleOnHover>
             </li>

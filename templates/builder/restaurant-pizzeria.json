@@ -1,0 +1,120 @@
+{
+  "type": "restaurant",
+  "variant": "classic",
+  "animations": { "enabled": true },
+  "sections": [
+    {
+      "id": "navbar",
+      "type": "navbar",
+      "props": {
+        "config": {
+          "logoText": "Pizza Roma",
+          "menuOpenLabel": "Ouvrir le menu",
+          "menuCloseLabel": "Fermer le menu",
+          "links": [
+            { "label": "Accueil", "href": "#hero" },
+            { "label": "Carte", "href": "#menu" },
+            { "label": "Photos", "href": "#gallery" },
+            { "label": "Contact", "href": "#contact" },
+            { "label": "Avis", "href": "#testimonials" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero",
+      "props": {
+        "config": {
+          "title": "Pizza au feu de bois",
+          "subtitle": "Pâte maturée 48h, ingrédients frais, cuisson minute.",
+          "ctaText": "Nous contacter",
+          "ctaHref": "#contact",
+          "image": "https://images.unsplash.com/photo-1579751626657-72bc17010498?w=1920&h=1080&fit=crop"
+        }
+      }
+    },
+    {
+      "id": "menu",
+      "type": "menu",
+      "props": {
+        "config": {
+          "title": "La carte",
+          "subtitle": "Nos incontournables",
+          "categories": [
+            {
+              "id": "classiques",
+              "name": "Classiques",
+              "items": [
+                { "name": "Margherita", "description": "Tomate, mozzarella, basilic", "price": "11 €" },
+                { "name": "Reine", "description": "Jambon, champignons, mozzarella", "price": "13 €" }
+              ]
+            },
+            {
+              "id": "signature",
+              "name": "Signatures",
+              "items": [
+                { "name": "Truffe", "description": "Crème, champignons, truffe", "price": "17 €" },
+                { "name": "Diavola", "description": "Spianata, piment, mozzarella", "price": "15 €" }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "props": {
+        "config": {
+          "title": "Photos",
+          "subtitle": "Du four à votre table",
+          "images": [
+            { "src": "https://images.unsplash.com/photo-1601924638867-3ec9c0b1f28f?w=900&h=600&fit=crop", "alt": "Pizza" },
+            { "src": "https://images.unsplash.com/photo-1542281286-9e0a16bb7366?w=900&h=600&fit=crop", "alt": "Ingrédients" },
+            { "src": "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=900&h=600&fit=crop", "alt": "Four" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "contact",
+      "type": "contact",
+      "props": {
+        "config": {
+          "title": "Nous contacter",
+          "subtitle": "Pour une commande ou une question, appelez-nous.",
+          "phone": "01 23 45 67 89"
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "props": {
+        "config": {
+          "title": "Avis",
+          "items": [
+            { "quote": "La pâte est incroyable, légère et croustillante.", "author": "Mina" },
+            { "quote": "Service rapide, pizzas généreuses.", "author": "Lucas" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "props": {
+        "config": {
+          "tagline": "Pizza Roma — Au feu de bois",
+          "copyright": "© 2026 Pizza Roma.",
+          "links": [
+            { "label": "Mentions légales", "href": "#" },
+            { "label": "Contact", "href": "#contact" }
+          ]
+        }
+      }
+    }
+  ]
+}
+

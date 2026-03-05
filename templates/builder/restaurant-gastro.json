@@ -1,0 +1,163 @@
+{
+  "type": "restaurant",
+  "variant": "luxe",
+  "animations": { "enabled": true },
+  "sections": [
+    {
+      "id": "navbar",
+      "type": "navbar",
+      "props": {
+        "config": {
+          "logoText": "Le Bistrot Doré",
+          "menuOpenLabel": "Ouvrir le menu",
+          "menuCloseLabel": "Fermer le menu",
+          "links": [
+            { "label": "Accueil", "href": "#hero" },
+            { "label": "Menu", "href": "#menu" },
+            { "label": "Horaires", "href": "#hours" },
+            { "label": "Réserver", "href": "#booking" },
+            { "label": "Avis", "href": "#testimonials" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero",
+      "props": {
+        "config": {
+          "title": "Gastronomie contemporaine",
+          "subtitle": "Une expérience élégante, sans ostentation.",
+          "ctaText": "Réserver",
+          "ctaHref": "#booking",
+          "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=1920&h=1080&fit=crop"
+        }
+      }
+    },
+    {
+      "id": "todays-special",
+      "type": "todaysSpecial",
+      "props": {
+        "config": {
+          "badgeLabel": "Menu dégustation",
+          "title": "5 services",
+          "description": "Découverte du moment, accords possibles",
+          "price": "79 €",
+          "ctaText": "Réserver",
+          "ctaHref": "#booking"
+        }
+      }
+    },
+    {
+      "id": "menu",
+      "type": "menu",
+      "props": {
+        "config": {
+          "title": "Menu",
+          "subtitle": "Sélection courte — produits de saison",
+          "categories": [
+            {
+              "id": "entrees",
+              "name": "Entrées",
+              "items": [
+                { "name": "Crabe & agrumes", "description": "Herbes fraîches, huile d’olive", "price": "18 €" },
+                { "name": "Asperges", "description": "Œuf parfait, noisette", "price": "16 €" }
+              ]
+            },
+            {
+              "id": "plats",
+              "name": "Plats",
+              "items": [
+                { "name": "Bar rôti", "description": "Beurre blanc, légumes", "price": "32 €" },
+                { "name": "Canard", "description": "Jus réduit, purée", "price": "34 €" }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hours",
+      "type": "openingHours",
+      "props": {
+        "config": {
+          "title": "Horaires",
+          "days": [
+            { "label": "Mardi–Jeudi", "hours": "12:00–14:00 / 19:00–22:00" },
+            { "label": "Vendredi–Samedi", "hours": "12:00–14:00 / 19:00–22:30" },
+            { "label": "Dimanche–Lundi", "hours": "Fermé" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "booking",
+      "type": "booking",
+      "props": {
+        "config": {
+          "title": "Réserver une table",
+          "subtitle": "Choisissez un créneau",
+          "successMessage": "Merci ! Nous vous confirmons rapidement.",
+          "slotDurationMinutes": 30,
+          "closedDays": [0, 1],
+          "openingHours": [
+            { "dayOfWeek": 2, "open": "12:00", "close": "14:00" },
+            { "dayOfWeek": 2, "open": "19:00", "close": "22:00" },
+            { "dayOfWeek": 3, "open": "12:00", "close": "14:00" },
+            { "dayOfWeek": 3, "open": "19:00", "close": "22:00" },
+            { "dayOfWeek": 4, "open": "12:00", "close": "14:00" },
+            { "dayOfWeek": 4, "open": "19:00", "close": "22:00" },
+            { "dayOfWeek": 5, "open": "12:00", "close": "14:00" },
+            { "dayOfWeek": 5, "open": "19:00", "close": "22:30" },
+            { "dayOfWeek": 6, "open": "12:00", "close": "14:00" },
+            { "dayOfWeek": 6, "open": "19:00", "close": "22:30" }
+          ],
+          "blockedSlots": [
+            { "date": "2026-03-20", "start": "19:30", "end": "20:30" }
+          ],
+          "fullDays": ["2026-03-06"],
+          "formLabels": {
+            "nameLabel": "Nom",
+            "emailLabel": "Email",
+            "dateLabel": "Date",
+            "timeLabel": "Heure",
+            "namePlaceholder": "Jean Dupont",
+            "emailPlaceholder": "jean@exemple.fr",
+            "submitLabel": "Envoyer",
+            "submittingLabel": "Envoi…",
+            "errorGeneric": "Une erreur est survenue.",
+            "connectionError": "Erreur de connexion."
+          }
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "props": {
+        "config": {
+          "title": "Avis",
+          "items": [
+            { "quote": "Une des meilleures expériences de l’année.", "author": "Sophie" },
+            { "quote": "Très beau travail sur les sauces, service impeccable.", "author": "Nicolas" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "props": {
+        "config": {
+          "tagline": "Le Bistrot Doré — Fine dining reimagined",
+          "copyright": "© 2026 Le Bistrot Doré.",
+          "links": [
+            { "label": "Mentions légales", "href": "#" },
+            { "label": "Contact", "href": "#booking" }
+          ]
+        }
+      }
+    }
+  ]
+}
+

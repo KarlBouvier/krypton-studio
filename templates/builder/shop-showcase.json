@@ -1,0 +1,96 @@
+{
+  "type": "shop",
+  "variant": "classic",
+  "themeId": "candle-classic",
+  "animations": { "enabled": true },
+  "sections": [
+    {
+      "id": "navbar",
+      "type": "navbar",
+      "props": {
+        "config": {
+          "logoText": "Lumière & Cire",
+          "menuOpenLabel": "Ouvrir le menu",
+          "menuCloseLabel": "Fermer le menu",
+          "links": [
+            { "label": "Accueil", "href": "#hero" },
+            { "label": "Bougies", "href": "#services" },
+            { "label": "Galerie", "href": "#gallery" },
+            { "label": "Avis", "href": "#testimonials" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero",
+      "props": {
+        "config": {
+          "title": "Bougies fait main",
+          "subtitle": "Créations artisanales, senteurs douces et flamme apaisante. Chaque bougie est coulée à la main dans mon atelier.",
+          "ctaText": "Découvrir les créations",
+          "ctaHref": "#services",
+          "image": "https://s3.eu-west-3.amazonaws.com/cdn.kipli/blog/deco-interieur/comment-utiliser-bougie-decorative-deco-interieure-2.jpg"
+        }
+      }
+    },
+    {
+      "id": "services",
+      "type": "services",
+      "props": {
+        "sector": "default",
+        "config": {
+          "title": "Mes créations",
+          "subtitle": "Bougies en cire naturelle, parfums soigneusement choisis",
+          "items": [
+            { "title": "Bougies parfumées", "description": "Soyeuse, végétale ou miel — plusieurs senteurs pour la maison." },
+            { "title": "Bougies décoratives", "description": "Formes et couleurs uniques, à offrir ou à s’offrir." },
+            { "title": "Sur mesure", "description": "Couleurs et parfums personnalisés pour vos événements." }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "props": {
+        "config": {
+          "title": "Galerie",
+          "subtitle": "Quelques créations et moments d’atelier",
+          "images": [
+            { "src": "https://i.etsystatic.com/45756856/r/il/9d40b7/6213256498/il_fullxfull.6213256498_mvhr.jpg", "alt": "Bougies allumées" },
+            { "src": "https://ateliermellony.com/wp-content/uploads/2022/02/245D4A47-957F-4DF2-BBE0-8984D1277CE6-scaled.jpeg", "alt": "Bougie parfumée" },
+            { "src": "https://www.bougiedeco.com/1525-large_default/bougie-cire-de-soja-parfum-orange-cannelle.jpg", "alt": "Bougie parfumée" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "props": {
+        "config": {
+          "title": "Avis",
+          "items": [
+            { "quote": "Senteurs délicates et belle durée de vie. J’en rachète les yeux fermés.", "author": "Julie" },
+            { "quote": "Parfaites en cadeau, emballage soigné. Une créatrice au top.", "author": "Maxime" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "props": {
+        "config": {
+          "tagline": "Lumière & Cire — Bougies fait main",
+          "copyright": "© 2026 Lumière & Cire.",
+          "links": [
+            { "label": "Mentions légales", "href": "#" },
+            { "label": "Contact", "href": "#hero" }
+          ]
+        }
+      }
+    }
+  ]
+}

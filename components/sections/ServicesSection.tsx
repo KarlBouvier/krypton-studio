@@ -67,15 +67,17 @@ export function ServicesSection({
                     "h-full p-6 transition-shadow hover:shadow-md"
                   )}
                 >
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
-                  <Icon className="h-5 w-5" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground">
-                  {item.title}
-                </h3>
-              </div>
-              <p className="mt-3 text-muted-foreground">{item.description}</p>
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-primary/10 text-primary">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="text-lg font-semibold text-foreground">
+                      {item.title}
+                    </h3>
+                  </div>
+                  <p className="mt-3 text-muted-foreground">
+                    {item.description}
+                  </p>
                 </div>
               </ScaleOnHover>
             </li>

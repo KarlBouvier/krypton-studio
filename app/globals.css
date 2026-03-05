@@ -125,6 +125,50 @@
   --luxe-gold-muted: 43 70% 45%;
 }
 
+/* bookstore-classic — librairie : bois, vert, marron */
+[data-theme="bookstore-classic"] {
+  --background-primary: 35 28% 96%;
+  --text-primary: 28 22% 14%;
+  --accent-primary: 142 38% 32%;
+  --background: var(--background-primary);
+  --foreground: var(--text-primary);
+  --primary: var(--accent-primary);
+  --card: 35 22% 98%;
+  --card-foreground: 28 22% 14%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 35 20% 92%;
+  --secondary-foreground: 28 22% 14%;
+  --muted: 35 18% 91%;
+  --muted-foreground: 28 15% 38%;
+  --accent: 142 35% 28%;
+  --accent-foreground: 0 0% 98%;
+  --border: 32 25% 85%;
+  --input: 32 25% 85%;
+  --ring: 142 38% 32%;
+}
+
+/* candle-classic — créatrice de bougies : rose / blanc */
+[data-theme="candle-classic"] {
+  --background-primary: 0 0% 99%;
+  --text-primary: 340 12% 18%;
+  --accent-primary: 350 55% 62%;
+  --background: var(--background-primary);
+  --foreground: var(--text-primary);
+  --primary: var(--accent-primary);
+  --card: 0 0% 100%;
+  --card-foreground: 340 12% 18%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 350 25% 96%;
+  --secondary-foreground: 340 12% 18%;
+  --muted: 350 20% 95%;
+  --muted-foreground: 340 10% 42%;
+  --accent: 350 50% 58%;
+  --accent-foreground: 0 0% 100%;
+  --border: 350 20% 91%;
+  --input: 350 20% 91%;
+  --ring: 350 55% 62%;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -143,5 +187,17 @@
   [data-theme="coiffeur-luxe"] h3 {
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     letter-spacing: 0.03em;
+  }
+  [data-theme="bookstore-classic"] h1,
+  [data-theme="bookstore-classic"] h2,
+  [data-theme="bookstore-classic"] h3 {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    letter-spacing: 0.02em;
+  }
+  [data-theme="candle-classic"] h1,
+  [data-theme="candle-classic"] h2,
+  [data-theme="candle-classic"] h3 {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    letter-spacing: 0.015em;
   }
 }

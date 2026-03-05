@@ -50,26 +50,28 @@ export function getAvailableSlotsForDate(
     return [];
   }
 
-  const daySchedule = openingHours.find((e) => e.dayOfWeek === dayOfWeek);
-  if (!daySchedule) {
+  const daySchedules = openingHours.filter((e) => e.dayOfWeek === dayOfWeek);
+  if (daySchedules.length === 0) {
     return [];
   }
 
-  let startM = parseTime(daySchedule.open);
-  const endM = parseTime(daySchedule.close);
   const slots: string[] = [];
-
-  while (startM + slotDuration <= endM) {
-    slots.push(formatTime(startM));
-    startM += slotDuration;
+  for (const schedule of daySchedules) {
+    let startM = parseTime(schedule.open);
+    const endM = parseTime(schedule.close);
+    while (startM + slotDuration <= endM) {
+      slots.push(formatTime(startM));
+      startM += slotDuration;
+    }
   }
+  const uniqueSlots = Array.from(new Set(slots)).sort();
 
   const blocked = (config.blockedSlots ?? []).filter((b) => b.date === dateKey);
   if (blocked.length === 0) {
-    return slots;
+    return uniqueSlots;
   }
 
-  return slots.filter((slot) => {
+  return uniqueSlots.filter((slot) => {
     const slotStartM = parseTime(slot);
     const slotEndM = slotStartM + slotDuration;
     const isBlocked = blocked.some((b) => {
@@ -105,21 +107,24 @@ export function getSlotsWithAvailability(
     return [];
   }
 
-  const daySchedule = openingHours.find((e) => e.dayOfWeek === dayOfWeek);
-  if (!daySchedule) {
+  const daySchedules = openingHours.filter((e) => e.dayOfWeek === dayOfWeek);
+  if (daySchedules.length === 0) {
     return [];
   }
 
-  let startM = parseTime(daySchedule.open);
-  const endM = parseTime(daySchedule.close);
   const allSlots: string[] = [];
-  while (startM + slotDuration <= endM) {
-    allSlots.push(formatTime(startM));
-    startM += slotDuration;
+  for (const schedule of daySchedules) {
+    let startM = parseTime(schedule.open);
+    const endM = parseTime(schedule.close);
+    while (startM + slotDuration <= endM) {
+      allSlots.push(formatTime(startM));
+      startM += slotDuration;
+    }
   }
+  const uniqueAllSlots = Array.from(new Set(allSlots)).sort();
 
   const availableSet = new Set(getAvailableSlotsForDate(date, config));
-  return allSlots.map((time) => ({
+  return uniqueAllSlots.map((time) => ({
     time,
     available: availableSet.has(time),
   }));

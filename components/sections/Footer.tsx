@@ -1,17 +1,29 @@
 import Link from "next/link";
+import { AnimateOnScroll } from "@/components/ui/animations";
 import { cn } from "@/lib/utils";
 import type { FooterConfig } from "@/lib/types";
+import type { Variant } from "@/lib/types";
 
 interface FooterProps {
   config: FooterConfig;
+  variant?: Variant;
+  animationsEnabled?: boolean;
   className?: string;
 }
 
 const DEVELOPED_BY_URL = "https://www.kryptonconsult.com/";
 
-export function Footer({ config, className }: FooterProps) {
+export function Footer({
+  config,
+  variant = "classic",
+  animationsEnabled = false,
+  className,
+}: FooterProps) {
   return (
-    <footer
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
       className={cn(
         "border-t border-border bg-muted/50 py-12 md:py-16",
         className
@@ -52,6 +64,6 @@ export function Footer({ config, className }: FooterProps) {
           )}
         </div>
       </div>
-    </footer>
+    </AnimateOnScroll>
   );
 }

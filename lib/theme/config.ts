@@ -31,6 +31,16 @@ export const THEMES: Record<ThemeId, ThemeTokens> = {
     textPrimary: "43 20% 95%",
     accentPrimary: "43 96% 56%",
   },
+  "bookstore-classic": {
+    backgroundPrimary: "35 28% 96%",
+    textPrimary: "28 22% 14%",
+    accentPrimary: "142 38% 32%",
+  },
+  "candle-classic": {
+    backgroundPrimary: "0 0% 99%",
+    textPrimary: "340 12% 18%",
+    accentPrimary: "350 55% 62%",
+  },
 };
 
 /**
@@ -46,6 +56,9 @@ export function getThemeId(
   }
   if (sector === "coiffeur") {
     return variant === "luxe" ? "coiffeur-luxe" : "coiffeur-classic";
+  }
+  if (sector === "bookstore") {
+    return "bookstore-classic";
   }
   return "default";
 }

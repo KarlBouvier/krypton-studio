@@ -1,16 +1,30 @@
 import { Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { OpeningHoursConfig } from "@/lib/types";
+import type { Variant } from "@/lib/types";
+import { AnimateOnScroll } from "@/components/ui/animations";
 
 interface OpeningHoursProps {
   config: OpeningHoursConfig;
+  variant?: Variant;
+  animationsEnabled?: boolean;
+  sectionId?: string;
   className?: string;
 }
 
-export function OpeningHours({ config, className }: OpeningHoursProps) {
+export function OpeningHours({
+  config,
+  variant = "classic",
+  animationsEnabled = false,
+  sectionId = "hours",
+  className,
+}: OpeningHoursProps) {
   return (
-    <section
-      id="hours"
+    <AnimateOnScroll
+      enabled={animationsEnabled}
+      variant={variant}
+      as="section"
+      id={sectionId}
       className={cn(
         "border-t border-border bg-background py-16 md:py-24",
         className
@@ -42,6 +56,6 @@ export function OpeningHours({ config, className }: OpeningHoursProps) {
           ))}
         </ul>
       </div>
-    </section>
+    </AnimateOnScroll>
   );
 }

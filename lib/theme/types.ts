@@ -23,7 +23,9 @@ export type ThemeId =
   | "warm-classic"
   | "warm-luxe"
   | "coiffeur-classic"
-  | "coiffeur-luxe";
+  | "coiffeur-luxe"
+  | "bookstore-classic"
+  | "candle-classic";
 
 /** Semantic token keys for type-safe usage */
 export const SEMANTIC_TOKEN_KEYS = [

@@ -1,0 +1,149 @@
+{
+  "type": "restaurant",
+  "variant": "luxe",
+  "animations": { "enabled": true },
+  "sections": [
+    {
+      "id": "navbar",
+      "type": "navbar",
+      "props": {
+        "config": {
+          "logoText": "Le Comptoir Moderne",
+          "menuOpenLabel": "Ouvrir le menu",
+          "menuCloseLabel": "Fermer le menu",
+          "links": [
+            { "label": "Accueil", "href": "#hero" },
+            { "label": "Menu", "href": "#menu" },
+            { "label": "Galerie", "href": "#gallery" },
+            { "label": "RDV", "href": "#booking" },
+            { "label": "Avis", "href": "#testimonials" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero",
+      "props": {
+        "config": {
+          "title": "Une cuisine sincère, une ambiance chic",
+          "subtitle": "Produits de saison, carte courte, expérience soignée.",
+          "ctaText": "Réserver",
+          "ctaHref": "#booking",
+          "image": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=1920&h=1080&fit=crop"
+        }
+      }
+    },
+    {
+      "id": "menu",
+      "type": "menu",
+      "props": {
+        "config": {
+          "title": "Menu",
+          "subtitle": "Une sélection qui évolue au fil des saisons",
+          "categories": [
+            {
+              "id": "entrees",
+              "name": "Entrées",
+              "items": [
+                { "name": "Velouté du moment", "description": "Crème légère, herbes fraîches", "price": "9 €" },
+                { "name": "Œuf parfait", "description": "Champignons, jus réduit", "price": "12 €" }
+              ]
+            },
+            {
+              "id": "plats",
+              "name": "Plats",
+              "items": [
+                { "name": "Poisson du marché", "description": "Sauce agrumes, légumes rôtis", "price": "24 €" },
+                { "name": "Bœuf confit", "description": "Purée maison, jus corsé", "price": "28 €" }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "props": {
+        "config": {
+          "title": "Galerie",
+          "subtitle": "Quelques instants capturés",
+          "images": [
+            { "src": "https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=900&h=600&fit=crop", "alt": "Assiette" },
+            { "src": "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=900&h=600&fit=crop", "alt": "Restaurant" },
+            { "src": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=900&h=600&fit=crop", "alt": "Dessert" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "booking",
+      "type": "booking",
+      "props": {
+        "config": {
+          "title": "Réserver",
+          "subtitle": "Choisissez une date, un créneau et laissez vos coordonnées",
+          "successMessage": "Merci ! Nous vous confirmons rapidement.",
+          "slotDurationMinutes": 30,
+          "closedDays": [0, 1],
+          "openingHours": [
+            { "dayOfWeek": 2, "open": "11:30", "close": "14:30" },
+            { "dayOfWeek": 2, "open": "18:30", "close": "22:30" },
+            { "dayOfWeek": 3, "open": "11:30", "close": "14:30" },
+            { "dayOfWeek": 3, "open": "18:30", "close": "22:30" },
+            { "dayOfWeek": 4, "open": "11:30", "close": "14:30" },
+            { "dayOfWeek": 4, "open": "18:30", "close": "22:30" },
+            { "dayOfWeek": 5, "open": "11:30", "close": "14:30" },
+            { "dayOfWeek": 5, "open": "18:30", "close": "22:30" },
+            { "dayOfWeek": 6, "open": "18:30", "close": "22:30" }
+          ],
+          "blockedSlots": [
+            { "date": "2026-03-20", "start": "19:00", "end": "20:30" }
+          ],
+          "fullDays": ["2026-03-06"],
+          "formLabels": {
+            "nameLabel": "Nom",
+            "emailLabel": "Email",
+            "dateLabel": "Date",
+            "timeLabel": "Heure",
+            "namePlaceholder": "Jean Dupont",
+            "emailPlaceholder": "jean@exemple.fr",
+            "submitLabel": "Envoyer",
+            "submittingLabel": "Envoi…",
+            "errorGeneric": "Une erreur est survenue.",
+            "connectionError": "Erreur de connexion."
+          }
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "props": {
+        "config": {
+          "title": "Avis",
+          "items": [
+            { "quote": "Service impeccable et carte très bien pensée.", "author": "Camille" },
+            { "quote": "Ambiance cosy, on reviendra.", "author": "Alex" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "props": {
+        "config": {
+          "tagline": "Le Comptoir Moderne",
+          "copyright": "© 2026 Le Comptoir Moderne.",
+          "links": [
+            { "label": "Mentions légales", "href": "#" },
+            { "label": "Contact", "href": "#booking" }
+          ]
+        }
+      }
+    }
+  ]
+}
+

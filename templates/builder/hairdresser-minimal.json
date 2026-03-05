@@ -1,0 +1,133 @@
+{
+  "type": "hairdresser",
+  "variant": "classic",
+  "animations": { "enabled": true },
+  "sections": [
+    {
+      "id": "navbar",
+      "type": "navbar",
+      "props": {
+        "config": {
+          "logoText": "Atelier Capillaire",
+          "menuOpenLabel": "Ouvrir le menu",
+          "menuCloseLabel": "Fermer le menu",
+          "links": [
+            { "label": "Accueil", "href": "#hero" },
+            { "label": "Prestations", "href": "#services" },
+            { "label": "Galerie", "href": "#gallery" },
+            { "label": "RDV", "href": "#booking" },
+            { "label": "Avis", "href": "#testimonials" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hero",
+      "type": "hero",
+      "props": {
+        "config": {
+          "title": "Coupe, couleur, soins",
+          "subtitle": "Un salon minimal, une exécution impeccable.",
+          "ctaText": "Prendre RDV",
+          "ctaHref": "#booking",
+          "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&h=1080&fit=crop"
+        }
+      }
+    },
+    {
+      "id": "services",
+      "type": "services",
+      "props": {
+        "sector": "coiffeur",
+        "config": {
+          "title": "Prestations",
+          "subtitle": "Essentiel, sans superflu",
+          "items": [
+            { "title": "Coupe", "description": "Conseil, shampooing, finition." },
+            { "title": "Couleur", "description": "Patine, reflets, couvrance naturelle." },
+            { "title": "Soin", "description": "Hydratation, réparation, brillance." }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gallery",
+      "type": "gallery",
+      "props": {
+        "config": {
+          "title": "Avant / Après",
+          "subtitle": "Quelques transformations",
+          "images": [
+            { "src": "https://images.unsplash.com/photo-1595476108010-b4d1f769b0b2?w=900&h=600&fit=crop", "alt": "Avant" },
+            { "src": "https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?w=900&h=600&fit=crop", "alt": "Après" },
+            { "src": "https://images.unsplash.com/photo-1633681926022-84c23e8cb2d6?w=900&h=600&fit=crop", "alt": "Salon" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "booking",
+      "type": "booking",
+      "props": {
+        "config": {
+          "title": "Réserver un créneau",
+          "subtitle": "Choisissez une date et un créneau",
+          "successMessage": "Demande envoyée. On vous confirme rapidement.",
+          "slotDurationMinutes": 30,
+          "closedDays": [0, 1],
+          "openingHours": [
+            { "dayOfWeek": 2, "open": "09:00", "close": "19:00" },
+            { "dayOfWeek": 3, "open": "09:00", "close": "19:00" },
+            { "dayOfWeek": 4, "open": "09:00", "close": "19:00" },
+            { "dayOfWeek": 5, "open": "09:00", "close": "19:00" },
+            { "dayOfWeek": 6, "open": "09:00", "close": "17:00" }
+          ],
+          "blockedSlots": [
+            { "date": "2026-03-20", "start": "10:00", "end": "12:00" }
+          ],
+          "fullDays": ["2026-03-06"],
+          "formLabels": {
+            "nameLabel": "Nom",
+            "emailLabel": "Email",
+            "dateLabel": "Date",
+            "timeLabel": "Heure",
+            "namePlaceholder": "Jean Dupont",
+            "emailPlaceholder": "jean@exemple.fr",
+            "submitLabel": "Envoyer",
+            "submittingLabel": "Envoi…",
+            "errorGeneric": "Une erreur est survenue.",
+            "connectionError": "Erreur de connexion."
+          }
+        }
+      }
+    },
+    {
+      "id": "testimonials",
+      "type": "testimonials",
+      "props": {
+        "config": {
+          "title": "Avis",
+          "items": [
+            { "quote": "Coupe nickel, très bon conseil.", "author": "Anaïs" },
+            { "quote": "Couleur superbe, exactement ce que je voulais.", "author": "Mehdi" }
+          ]
+        }
+      }
+    },
+    {
+      "id": "footer",
+      "type": "footer",
+      "props": {
+        "config": {
+          "tagline": "Atelier Capillaire",
+          "copyright": "© 2026 Atelier Capillaire.",
+          "links": [
+            { "label": "Mentions légales", "href": "#" },
+            { "label": "Contact", "href": "#booking" }
+          ]
+        }
+      }
+    }
+  ]
+}
+
