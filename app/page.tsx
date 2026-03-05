@@ -113,9 +113,9 @@ export default function HomePage() {
           })}
         </ul>
 
-        <p className="mt-16 text-center text-sm text-muted-foreground">
+        <Link href="https://www.kryptonconsult.com/" target="_blank" className="mt-16 text-center text-sm text-muted-foreground hover:text-primary underline">
           Propulsé par KryptonConsult
-        </p>
+        </Link>
       </main>
     </div>
   );
